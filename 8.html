@@ -1,0 +1,363 @@
+<!doctype html>
+<html>
+<head>
+    <title>WEB</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="colors.js"></script>
+    <link rel="stylesheet" href="highlight/styles/railscasts.css">
+    <script src="highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+<h1><a href="index.html">WEB1</a></h1>
+<div id="grid">
+    <ol>
+        <li><a href="1.html">수업소개</a></li>
+        <li><a href="2.html">프로젝트의 동기</a></li>
+        <li><a href="3.html">기획</a></li>
+        <li><a href="4.html">코딩과 HTML</a></li>
+        <li><a href="5.html">HTML 코딩 실습 환경 준비</a></li>
+        <li><a href="6.html">기본문법 - 태그</a></li>
+        <li><a href="7.html">혁명적인 변화</a></li>
+        <li><a href="8.html">통계에 기반한 학습</a></li>
+        <li><a href="9.html">줄바꿈</a></li>
+        <li><a href="10.html">HTML이 중요한 이유</a></li>
+        <li><a href="11.html">최후의 문법 속성과 img</a></li>
+        <li><a href="12.html">부모자식과 목록</a></li>
+        <li><a href="13.html">문서의 구조와 슈퍼스타들</a></li>
+        <li><a href="14.html">태그의 제왕</a></li>
+        <li><a href="15.html">웹사이트 완성</a></li>
+        <li><a href="16.html">원시웹</a></li>
+        <li><a href="17.html">인터넷을 여는 열쇠 - 서버와 클라이언트</a></li>
+        <li><a href="18.html">웹호스팅 - github pages</a></li>
+        <li><a href="19.html">웹서버 운영하기</a></li>
+        <li><a href="19_1.html">웹서버 설치(윈도우)</a></li>
+        <li><a href="19_2.html">웹서버 설치(맥)</a></li>
+        <li><a href="19_3.html">웹서버 설치(리눅스)</a></li>
+        <li><a href="20.html">수업을 마치며 1</a></li>
+        <li><a href="21.html">수업을 마치며 2</a></li>
+        <li><a href="22.html">수업을 마치며 3</a></li>
+        <li><a href="code_power.html">부록 : 코드의 힘</a></li>
+        <li><a href="code_power_1.html">부록 : 코드의 힘 - 동영상 삽입</a></li>
+        <li><a href="code_power_2.html">부록 : 코드의 힘 - 댓글 기능 추가</a></li>
+        <li><a href="code_power_3.html">부록 : 코드의 힘 - 채팅 기능 추가</a></li>
+        <li><a href="code_power_4.html">부록 : 코드의 힘 - 방문자 분석기</a></li>
+    </ol>
+    <div id="article">
+        <input id="night_day" type="button" value="night" onclick="
+        nightDayHandler(this);
+      ">
+        <h2>통계에 기반한 학습</h2>
+        <div class="movie">
+            <video width="100%" controls>
+                <source src="./videos/8.통계에기반한학습.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p style="text-align: center;">---</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>이번 시간에는<br/>
+            통계에 기반을 둬서 공부하는 방법에 대한<br/>
+            이야기를 해보겠습니다.</p>
+
+        <p><a href="http://jisuchoi.net" target="_blank"><img alt="" height="360" src="./web_img/7626.jpeg"
+                                                              width="640"/></a></p>
+
+        <p>오늘날의 HTML은<br/>
+            약 150개가 넘는 태그가 존재합니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>그럼 그 많은 태그를 다 외워야 할까요?</p>
+
+        <p><a href="https://www.instagram.com/antdrawing/" target="_blank"><img alt="" height="360"
+                                                                                src="./web_img/7627.jpeg" width="640"/></a>
+        </p>
+
+        <p>앞에서 우리가 살펴본 혁명적인 변화로 인해서<br/>
+            태그가 무엇인지를 알고 있다면<br/>
+            여러분은 모든 태그를 다 알고 있는 것과 다름없습니다.<br/>
+            1분이면 찾을 수 있거든요.</p>
+
+        <p><img alt="" height="360" src="./web_img/7628.jpeg" width="640"/></p>
+
+        <p>그런데도<br/>
+            여러분이 태그를 하나도 모르고 있다면<br/>
+            코딩하는 것이 너무 불편해요.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>여기서는<br/>
+            여러분에게 통계를 보여드리면서<br/>
+            어떤 방향으로 공부하면 좋을지를<br/>
+            스스로 결정하실 수 있도록 도움을 드리겠습니다.</p>
+
+        <p><a href="https://www.behance.net/puffin_" target="_blank"><img alt="" height="360" src="./web_img/7630.jpeg"
+                                                                          width="640"/></a></p>
+
+        <p>밑천으로서 알고 있으면<br/>
+            편리한 태그가 무엇인지를<br/>
+            스스로 판단할 수 있도록 해드리는 것이 목표입니다.</p>
+
+        <p><img alt="" height="360" src="./web_img/7629.jpeg" width="640"/></p>
+
+        <p>구글에서는<br/>
+            전 세계에 있는 수많은 웹페이지를 분석합니다.<br/>
+            그 분석 결과를 공개했었는데<br/>
+            그 결과를 보기 좋게 잘 정리 정돈한 사이트가 있습니다.</p>
+
+        <p><a href="https://advancedwebranking.com/html/" target="_blank">https://advancedwebranking.com/html/</a></p>
+
+        <p>&nbsp;</p>
+
+        <p>아래 그래프는<br/>
+            전 세계에 있는 웹페이지들이<br/>
+            몇 종류의 태그로 이루어져 있는지를 보여주고 있습니다.<br/>
+            이에 따르면<br/>
+            26개 정도의 태그를 사용하는<br/>
+            사이트가 제일 많군요.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p><img alt="" height="328" src="./web_img/7623.png" width="640"/></p>
+
+        <p style="text-align: center;"><a href="https://advancedwebranking.com/html/" target="_blank">출처 :
+            https://advancedwebranking.com/html/</a></p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>여러분은 지금 몇 개의 태그를 알고 있나요?</p>
+
+        <ul>
+            <li>strong</li>
+            <li>u</li>
+            <li>h1~h6</li>
+        </ul>
+
+        <p>벌써 8개의 태그를 알고 있는 상태입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>웹이 처음 세상에 나온 1990년에는<br/>
+            약 20개의 태그가 있었을 뿐입니다.<br/>
+            그중에 몇몇 태그는 오늘날 사용되지 않고 있습니다.<br/>
+            여러분은 이미 충분히 많은 것을 공부한 상태입니다.<br/>
+            축하드려요 :)</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>아래 그래프는 태그별 인기도입니다.</p>
+
+        <p><img alt="" height="744" src="./web_img/7624.png" width="640"/></p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>통계에 따르면<br/>
+            1등은 head 태그예요.<br/>
+            슈퍼스타입니다.&nbsp;<br/>
+            곧 배우게 됩니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>우리가 배운 태그들의 인기는 어떤가요?<br/>
+            h1 태그와 strong 태그가<br/>
+            순위권에 들어있는 것이 보이죠?<br/>
+            오늘날 태그 전체가&nbsp;약 150개 정도라는 것을 고려하면<br/>
+            이 정도 순위로도 꽤 잘 나가는 태그인 셈입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>통계를 보니까<br/>
+            어떻게 공부해야 할지가 눈에 보이시죠?<br/>
+            통계를 보면 어떻게 공부해야 할지를 스스로 파악할 수 있습니다.&nbsp;<br/>
+            공부하실 때 통계에 기반해서 학습하시길 바래요.&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p><br/>
+            이 수업은 이 정도에서 마무리해도 됩니다만,<br/>
+            통계와 관련된 저의 사례를 하나 소개해드릴게요.<br/>
+            넘어가셔도 됩니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>저는 최근에 중국어 공부를 시작했습니다.<br/>
+            중국어 공부를 시작하면서<br/>
+            제가 제일 처음에 한 일이 있습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>바로 검색엔진에서<br/>
+            아래와 같이 검색해본 것입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p style="border: 2px solid #515151;
+padding: 0.3rem;
+    padding-left: 0.3rem;
+color: #515151;
+border-radius: 5px;
+background-image: url('./web_img/7580.png');
+background-repeat: no-repeat;
+padding-left: 2.6rem;
+background-position: 4px 1px;">frequency of chinese&nbsp;words</p>
+
+        <p>&nbsp;</p>
+
+        <p>frequency는 빈도수라는 뜻입니다.<br/>
+            즉 중국어의 빈도수라는 의미로 검색을 한 것이죠.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>검색결과 아래와 같은 사이트가 나왔어요.<a href="http://lingua.mtsu.edu/chinese-computing/statistics/char/list.php?Which=MO"
+                                    target="_blank">http://lingua.mtsu.edu/chinese-computing/statistics/char/list.php?Which=MO</a>
+        </p>
+
+        <p><img alt="" height="632" src="./web_img/7625.png" width="640"/></p>
+
+        <p>이 사이트는 중국어 1만 단어의 사용빈도순에 따른&nbsp;랭킹을 보여주고 있습니다.&nbsp;1등이 누구인가요? 的자입니다. 화학<u><strong>적</strong></u>,
+            과학<u><strong>적</strong></u>, 프로그래밍<u><strong>적</strong></u>에서 쓰는 적자입니다. 적자 혼자서 무려 4%의 빈도수를 가지고 있습니다. 1만 개의
+            글자 중에서 4%를 쓴다는 것은 엄청난 인기죠. 또 상위 6등까지를 합치면 빈도수가 10.31%입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>적자가 가지고 있는 빈도수와<br/>
+            1000번째 단어의 빈도수를<br/>
+            비유적으로 비교해봤습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>1000번째 단어가 2미터 키를 가진 사람이라면<br/>
+            적자는 세계에서 10번째로 높은 빌딩의 높이와 비슷합니다.<br/>
+            8000번째 단어가 2미터 키를 가진 사람이라면<br/>
+            적자는 지구의 지름보다 3000km 더 깁니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p><br/>
+            한편,<br/>
+            잘 들여다보면<br/>
+            앞에 있는 단어들은<br/>
+            자체적으로 의미가 있다기보다<br/>
+            의미가 있는 단어들을 결합해서<br/>
+            새로운 의미를 만들어내는<br/>
+            단어라는 것을 알 수 있습니다.<br/>
+            즉 말을 만드는 말입니다.<br/>
+            뒤에 있는 어렵고 복잡한&nbsp;단어들의<br/>
+            어버이면서 신인 것입니다.&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p><br/>
+            아마도 중국어를 처음 배운다면<br/>
+            처음에는 물론 빈도가 높은 단어를 먼저 배울 것입니다.<br/>
+            진도가 나감에 따라서&nbsp;<br/>
+            곧 쉬운 단어들에 대한 관심은&nbsp;멀어지고,<br/>
+            모를 법한 단어들이 시험에 나오기 시작합니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>이런 상태에 오래 노출되면<br/>
+            어려운 것은 중요한 것이고,<br/>
+            쉬운 것은 사소한 것이라는<br/>
+            해로운 인식이 생기게 됩니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>그런데 사실은<br/>
+            쉽고 단순한 것들을 합성해서<br/>
+            무엇인가를 만들어내는 수련은<br/>
+            결코 쉬운 것이 아닙니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>같은 말이지만,&nbsp;<br/>
+            이 수련을 충분히 한다면&nbsp;<br/>
+            어느 순간 실력은<br/>
+            폭발적으로 늘어나게 되어 있습니다.</p>
+
+        <p><img alt="" height="360" src="./web_img/7631.jpeg" width="640"/></p>
+
+        <p>지금 우리가 배우고 있는 것들을<br/>
+            쉽다고 무시하지 마세요.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>1990년부터 지금까지 복잡해진 거대한 웹은<br/>
+            지금까지 배운 것들의 토양 위에 서 있습니다.<br/>
+            지금까지 배운 것이 없다면<br/>
+            뒤에서 배우는 것들은 존재하지 않습니다.<br/>
+            뒤에서 배우는 것이 존재하지 않아도<br/>
+            지금까지 배운 것들은 잘 지낼 수 있습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>공부하실 때<br/>
+            통계를 기반으로 공부 방향을 스스로 설정하셨으면 좋겠습니다.</p>
+
+        <p><img alt="" height="360" src="./web_img/7632.jpeg" width="640"/></p>
+
+        <p>또<br/>
+            가야 할 길 보다,<br/>
+            거쳐온 길을 보면서<br/>
+            자기에게 유리하게 상황을 해석하셨으면 좋겠습니다.<br/>
+            자기만큼은 자기의 편이 되어야죠</p>
+
+        <p>&nbsp;</p>
+
+        <p>:)</p>
+
+        <p>&nbsp;</p>
+
+    </div>
+</div>
+</body>
+</html>

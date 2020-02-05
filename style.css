@@ -1,0 +1,100 @@
+@import url(SpoqaHanSans_original/SpoqaHanSans-kr.css);
+
+* {
+    box-sizing: border-box;
+}
+
+* {
+    font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
+
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    color: black;
+}
+
+h1 {
+    font-size: 45px;
+    text-align: center;
+    border-bottom: 1px solid gray;
+    margin: 0;
+    padding: 30px;
+    font-weight: 100;
+}
+
+h1 a{
+    text-decoration: none;
+}
+
+ol a {
+    text-decoration: none;
+    font-weight: 100;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 20rem 680px;
+}
+
+#grid>ol {
+    border-right: 1px solid gray;
+    width: 20rem;
+    margin: 0;
+    padding: 1.5rem;
+    list-style: none;
+}
+
+#grid>ol>li{
+    padding:0.2rem;
+}
+
+#grid>ol>li>a {
+    width:100%;
+    display: inline-block;
+}
+
+#grid #article {
+    padding: 1rem;
+    font-weight: 100;
+}
+
+@media (max-width: 1000px) {
+    #grid {
+        display: block;
+    }
+
+    #grid>ol {
+        border-right: none;
+        max-height:20rem;
+        overflow-y: scroll;
+        width:100%;
+    }
+
+    h1 {
+        border-bottom: none;
+    }
+}
+
+#night_day {
+    float: right;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+img {
+    width: 100% !important;
+    height: inherit !important;
+}
+
+iframe {
+    width: 100% !important;
+}
+
+.movie {
+    margin-bottom:2rem;
+    border:1px solid #c1c1c1;
+}

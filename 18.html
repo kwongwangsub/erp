@@ -1,0 +1,362 @@
+<!doctype html>
+<html>
+<head>
+    <title>WEB</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="colors.js"></script>
+    <link rel="stylesheet" href="highlight/styles/railscasts.css">
+    <script src="highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+<h1><a href="index.html">WEB1</a></h1>
+<div id="grid">
+    <ol>
+        <li><a href="1.html">수업소개</a></li>
+        <li><a href="2.html">프로젝트의 동기</a></li>
+        <li><a href="3.html">기획</a></li>
+        <li><a href="4.html">코딩과 HTML</a></li>
+        <li><a href="5.html">HTML 코딩 실습 환경 준비</a></li>
+        <li><a href="6.html">기본문법 - 태그</a></li>
+        <li><a href="7.html">혁명적인 변화</a></li>
+        <li><a href="8.html">통계에 기반한 학습</a></li>
+        <li><a href="9.html">줄바꿈</a></li>
+        <li><a href="10.html">HTML이 중요한 이유</a></li>
+        <li><a href="11.html">최후의 문법 속성과 img</a></li>
+        <li><a href="12.html">부모자식과 목록</a></li>
+        <li><a href="13.html">문서의 구조와 슈퍼스타들</a></li>
+        <li><a href="14.html">태그의 제왕</a></li>
+        <li><a href="15.html">웹사이트 완성</a></li>
+        <li><a href="16.html">원시웹</a></li>
+        <li><a href="17.html">인터넷을 여는 열쇠 - 서버와 클라이언트</a></li>
+        <li><a href="18.html">웹호스팅 - github pages</a></li>
+        <li><a href="19.html">웹서버 운영하기</a></li>
+        <li><a href="19_1.html">웹서버 설치(윈도우)</a></li>
+        <li><a href="19_2.html">웹서버 설치(맥)</a></li>
+        <li><a href="19_3.html">웹서버 설치(리눅스)</a></li>
+        <li><a href="20.html">수업을 마치며 1</a></li>
+        <li><a href="21.html">수업을 마치며 2</a></li>
+        <li><a href="22.html">수업을 마치며 3</a></li>
+        <li><a href="code_power.html">부록 : 코드의 힘</a></li>
+        <li><a href="code_power_1.html">부록 : 코드의 힘 - 동영상 삽입</a></li>
+        <li><a href="code_power_2.html">부록 : 코드의 힘 - 댓글 기능 추가</a></li>
+        <li><a href="code_power_3.html">부록 : 코드의 힘 - 채팅 기능 추가</a></li>
+        <li><a href="code_power_4.html">부록 : 코드의 힘 - 방문자 분석기</a></li>
+    </ol>
+    <div id="article">
+        <input id="night_day" type="button" value="night" onclick="
+        nightDayHandler(this);
+      ">
+        <h2>웹호스팅 (github pages)</h2>
+        <div class="movie">
+            <video width="100%" controls>
+                <source src="./videos/18.웹호스팅-github%20page.mp4" type="video/mp4">
+            </video>
+        </div>
+        <p style="text-align: center;">&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p style="text-align: center;">---</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>직접 웹서버를 운영하는 일은 쉽지 않은 일입니다.<br/>
+            우선 컴퓨터가 있어야 하고요,<br/>
+            컴퓨터가 냉장고처럼 항상 켜져 있어야 합니다.<br/>
+            웹서버라는 프로그램을 배워서 설치해야 합니다.<br/>
+            또 인터넷을 통해서<br/>
+            외부로 정보를 전송할 수 있게<br/>
+            설정을 해야 합니다.<br/>
+            쉽지 않습니다.</p>
+
+        <p><img alt="" height="360" src="./web_img/7781.jpeg" width="640"/></p>
+
+        <p>그래서<br/>
+            이런 일을 대행해 주는 회사들이 있습니다.<br/>
+            인터넷에 연결된 컴퓨터 하나 하나를 호스트라고 합니다.<br/>
+            이런 컴퓨터를 빌려주는 사업을 호스팅이라고 합니다.<br/>
+            웹서버를 전문적으로 빌려주는 비즈니스를<br/>
+            웹호스팅 업체라고 부릅니다.</p>
+
+        <p><a href="http://www.nanaworks.co.kr" target="_blank"><img alt="" height="360" src="./web_img/7779.jpeg"
+                                                                     width="640"/></a></p>
+
+        <p style="text-align: center;">&nbsp;</p>
+
+        <p>수많은 웹호스팅 업체가 있습니다.<br/>
+            그 중에서<br/>
+            무료이고, 유명한 서비스를 이용할 것입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>바로 <a href="https://github.com" target="_blank">github(https://github.com)</a>의 pages 기능입니다.</p>
+
+        <p><img alt="" height="398" src="./web_img/7755.png" width="640"/></p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>이 서비스는<br/>
+            프로그래머들에게는 성지와 같은<br/>
+            중요한 서비스입니다.<br/>
+            전세계의 수많은 오픈소스들이<br/>
+            이곳에서 만들어지고 있거든요.<br/>
+            &nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>이 서비스 자체는<br/>
+            우리 수업의 주제는 아니니까<br/>
+            나중에 살펴보시면 됩니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>우리는 github가 제공하는 여러 기능 중<br/>
+            웹호스팅 기능을 이용해서<br/>
+            우리의 홈페이지를 운영할 것입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>회원가입하시고(sign up),<br/>
+            로그인해 주세요(sign in)</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>저장소(repository)라는 것을<br/>
+            생성해 주셔야 합니다.<br/>
+            저장소는 소스코드를 보관하는 곳이라고<br/>
+            생각하시면 됩니다.<br/>
+            아래처럼 생긴 버튼을 누르면 됩니다.</p>
+
+        <p><img alt="" height="79" src="./web_img/7757.png" width="200"/></p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>아래와 같은 화면이 나오는데 저장소를 생성하는 화면입니다.</p>
+
+        <p><img alt="" height="450" src="./web_img/7820.jpeg" width="578"/></p>
+
+        <p><strong>1. Repository name</strong> 에는 프로젝트의 이름을 적어 주세요. 저의 경우 web1이라고 할 것입니다.<br/>
+            <strong>2. public(공개), private(비공개)</strong>는 저장소의 공개여부를 정하는 것입니다. public으로 해 주세요. (누구나 여러분의 소스코드를 볼 수 있습니다)<br/>
+            <strong>3. Initialize this repository with a README</strong>의 체크박스를 꼭 체크해 주세요.<br/>
+            <br/>
+            저장소 생성하기(Create repository) 버튼을 눌러주세요.<br/>
+            <img alt="" height="33" src="./web_img/7764.png" width="100"/><br/>
+            &nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>아래와 같은 화면이 나타날 것입니다.<br/>
+            <img alt="" height="181" src="./web_img/7767.png" width="640"/></p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>이 중에서 upload files라는 부분을 클릭해 주세요. 아래와 같은 페이지가 뜰 거에요.</p>
+
+        <p><img alt="" height="360" src="./web_img/7769.jpeg" width="640"/></p>
+
+        <p><strong>1. choose your files(파일을 선택하세요)을 누르세요.</strong> 프로젝트 폴더에 있는 파일을 다중선택합니다.</p>
+
+        <p><img alt="" height="173" src="./web_img/7770.png" width="200"/></p>
+
+        <p><strong>2. 변경된 내용을 적습니다.</strong> 파일이 변경될 때마다 업로드를 해야 하기 때문에 변경된 내용을 적어줍니다.<br/>
+            <strong>3. Commit changes 버튼을 누르세요.</strong> 업로드가 시작됩니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>업로드가 끝나면 아래와 같이 파일의 목록이 보입니다.<br/>
+            <img alt="" height="176" src="./web_img/7771.jpeg" width="640"/></p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>그럼 우리가 업로드한 웹페이지를 인터넷을 통해서 서비스 해봅시다. Settings 버튼을 선택합니다.</p>
+
+        <p><img alt="" height="47" src="./web_img/7773.png" width="640"/></p>
+
+        <p>Github Pages 항목에서 master branch를 선택하고 Select branch 중 master branch를 선택합니다. 그리고 Save 버튼을 누릅니다.</p>
+
+        <p><img alt="" height="225" src="./web_img/7775.jpeg" width="500"/></p>
+
+        <p>그럼 아래와 같이 주소가 표시됩니다. (물론 주소는 각자 다르겠죠?)<br/>
+            <img alt="" height="143" src="./web_img/7776.png" width="500"/></p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>이 주소로 방문해 보시면 자신이 만든 웹페이지가 보일 것입니다. (혹시 나오지 않는다면 5분 후에 다시 접속해 보세요)</p>
+
+        <p><img alt="" height="345" src="./web_img/7823.png" width="640"/></p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>감동적이지 않나요?<br/>
+            이제<br/>
+            내가 만든 웹페이지를<br/>
+            전세계 사람들에게 서비스할 수 있게 되었습니다.<br/>
+            축하합니다.<br/>
+            &nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>그럼 우리가 한 일을 이론적으로 정리해보겠습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>삼자가 있습니다. my는 여러분의 컴퓨터입니다. visitor는 여러분의 웹페이지를 보고 싶어하는 사람입니다.<br/>
+            <img alt="" height="360" src="./web_img/7777.jpeg" width="640"/></p>
+
+        <p>여러분의 컴퓨터는 현재로서는 컨텐츠를 서비스 할 수 없습니다.&nbsp; 우리는 github의 pages 기능을 이용했습니다. github에 파일들을 업로드하고, pages 기능을 활성화하면
+            github의 서버 컴퓨터에 웹서버가 켜집니다. 그리고 우리에게 웹서버의 주소를 알려줍니다.</p>
+
+        <p>이제 웹서버의 주소를 방문자에게 알려주면 방문자는 나의 컴퓨터가 아닌 github의 컴퓨터에 설치된 웹서버에 접속하게 됩니다.<br/>
+            <img alt="" height="360" src="./web_img/7778.jpeg" width="640"/></p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>웹서버를 직접 운영하는 것에 비해서<br/>
+            웹호스팅을 이용하면<br/>
+            쉽습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>단점은<br/>
+            인터넷의 원리가 감춰져 있다는 것입니다.</p>
+
+        <p><img alt="" height="360" src="./web_img/7780.jpeg" width="640"/></p>
+
+        <p>하지만<br/>
+            현업에서 웹서버를 직접 운영하는 경우는 많지 않아요.<br/>
+            웹서버를 운영하기 위해서는 많은 노하우가 필요하거든요.</p>
+
+        <p><img alt="" height="360" src="./web_img/7782.jpeg" width="640"/></p>
+
+        <p>우리는 github를 사용했지만<br/>
+            미래에는 이 서비스를 이용하지 못할 수도 있습니다.<br/>
+            또 github pages는 제약이 많은 서비스이기도 합니다.<br/>
+            중요한 것은 github의 사용법이 아니고,<br/>
+            여러분이 필요한 웹호스팅을 찾아내는 능력입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>우리는 HTML만으로 웹페이지를 만들었습니다.<br/>
+            HTML은 웹브라우저가 해석하기 때문에<br/>
+            서버쪽에서 특별히 해 줄 일이 없습니다.<br/>
+            이런 특성을 정적(static)이라고 합니다.<br/>
+            자연스럽게 HTML만으로 만들어진 웹사이트를<br/>
+            호스팅하는 서비스 중에는 무료가 많습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>그럼 동적(dynamic)인&nbsp;것이 있냐고요?<br/>
+            있습니다. 나중에 배울 php나 python, ruby, java와 같은<br/>
+            기술을 이용하려면 대체로 비용을 내야 합니다.<br/>
+            이런 기술을 활용하기 전까지는<br/>
+            유료 서비스를 이용할 필요가 전혀 없습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>아래와 같이 검색하시면<br/>
+            여러분의 목적에 맞는 웹호스팅을 찾을 수 있습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p style="border: 2px solid #515151;
+padding: 0.3rem;
+    padding-left: 0.3rem;
+color: #515151;
+border-radius: 5px;
+background-image: url('./web_img/7580.png');
+background-repeat: no-repeat;
+padding-left: 2.6rem;
+background-position: 4px 1px;">free static web hosting</p>
+
+        <p>&nbsp;</p>
+
+        <p>현시점에서 추천 드리고 싶은 서비스들은 이런 것들이 있습니다.</p>
+
+        <ul>
+            <li><a href="https://bitballoon.com" target="_blank">https://bitballoon.com</a></li>
+            <li><a href="http://neocities.org" target="_blank">http://neocities.org</a></li>
+            <li><a href="https://azure.microsoft.com/en-us/services/storage/blobs/">Azure Blob</a></li>
+            <li><a href="https://cloud.google.com/storage/" target="_blank">Google Cloud Storage</a></li>
+            <li><a href="http://aws.amazon.com/s3" target="_blank">Amazon S3</a></li>
+        </ul>
+
+        <p><br/>
+            하지만 미래에는 없어졌을 수도 있고,<br/>
+            더 좋은 서비스도 있을 수 있기 때문에<br/>
+            더욱 중요한 것은 검색을 통해서<br/>
+            찾아낼 수 있는 능력이라는 것을 기억해 주세요.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <h3>자주 묻는 질문</h3>
+
+        <p><img alt="" src="https://www.dropbox.com/s/krfra0ral97ek7c/Screenshot%202017-12-13%2021.59.03.png?dl=0"/>질문 :
+            upload file이 보이지 않습니다.&nbsp;<br/>
+            답변 : 아래와 같이 저장소를 생성할 때 꼭 Initialize this repository with a README 옵션을 체크해주세요.&nbsp;</p>
+
+        <p><img alt="" height="82" src="./web_img/7505.png" width="640"/></p>
+
+        <p>&nbsp;</p>
+
+        <p>질문 : 아래와 같은 오류가 뜹니다. Please verify your email address Before you can contribute on GitHub, we need you to
+            verify your email address. An email containing verification instructions was sent to 이메일 주소.<br/>
+            답변 : 회원가입 후에 이메일 인증을 해야 한다는 의미입니다. 이메일로 가셔서&nbsp;Verify email address 누르시면 됩니다.&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <h2>완성한 웹사이트를 알려주세요.</h2>
+
+        <div class="movie">
+            <iframe frameborder="0" height="360" marginheight="0" marginwidth="0" scrolling="yes"
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSe0-5lmgfLYA7z0W_I-puRioBwTqPWvUC1xj653jSzqNbnHHg/viewform?embedded=true"
+                    width="640">Loading...
+            </iframe>
+        </div>
+
+        <h2>다른 사람들의 웹사이트를 구경하세요.</h2>
+
+        <div class="movie">
+            <iframe frameborder="0" height="360" scrolling="yes"
+                    src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTrzSo32rTP_dsafeED_No1A0KzqTOJI1b-TndzdDVCJbo-Ei_lSSxVTfax4sUjLRu_zvwMs-Wx8j8a/pubhtml?gid=911765668&amp;single=true&amp;widget=true&amp;headers=false"
+                    width="640"></iframe>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

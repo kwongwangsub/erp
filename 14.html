@@ -1,0 +1,408 @@
+<!doctype html>
+<html>
+<head>
+    <title>WEB</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="colors.js"></script>
+    <link rel="stylesheet" href="highlight/styles/railscasts.css">
+    <script src="highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+<h1><a href="index.html">WEB1</a></h1>
+<div id="grid">
+    <ol>
+        <li><a href="1.html">수업소개</a></li>
+        <li><a href="2.html">프로젝트의 동기</a></li>
+        <li><a href="3.html">기획</a></li>
+        <li><a href="4.html">코딩과 HTML</a></li>
+        <li><a href="5.html">HTML 코딩 실습 환경 준비</a></li>
+        <li><a href="6.html">기본문법 - 태그</a></li>
+        <li><a href="7.html">혁명적인 변화</a></li>
+        <li><a href="8.html">통계에 기반한 학습</a></li>
+        <li><a href="9.html">줄바꿈</a></li>
+        <li><a href="10.html">HTML이 중요한 이유</a></li>
+        <li><a href="11.html">최후의 문법 속성과 img</a></li>
+        <li><a href="12.html">부모자식과 목록</a></li>
+        <li><a href="13.html">문서의 구조와 슈퍼스타들</a></li>
+        <li><a href="14.html">태그의 제왕</a></li>
+        <li><a href="15.html">웹사이트 완성</a></li>
+        <li><a href="16.html">원시웹</a></li>
+        <li><a href="17.html">인터넷을 여는 열쇠 - 서버와 클라이언트</a></li>
+        <li><a href="18.html">웹호스팅 - github pages</a></li>
+        <li><a href="19.html">웹서버 운영하기</a></li>
+        <li><a href="19_1.html">웹서버 설치(윈도우)</a></li>
+        <li><a href="19_2.html">웹서버 설치(맥)</a></li>
+        <li><a href="19_3.html">웹서버 설치(리눅스)</a></li>
+        <li><a href="20.html">수업을 마치며 1</a></li>
+        <li><a href="21.html">수업을 마치며 2</a></li>
+        <li><a href="22.html">수업을 마치며 3</a></li>
+        <li><a href="code_power.html">부록 : 코드의 힘</a></li>
+        <li><a href="code_power_1.html">부록 : 코드의 힘 - 동영상 삽입</a></li>
+        <li><a href="code_power_2.html">부록 : 코드의 힘 - 댓글 기능 추가</a></li>
+        <li><a href="code_power_3.html">부록 : 코드의 힘 - 채팅 기능 추가</a></li>
+        <li><a href="code_power_4.html">부록 : 코드의 힘 - 방문자 분석기</a></li>
+    </ol>
+    <div id="article">
+        <input id="night_day" type="button" value="night" onclick="
+        nightDayHandler(this);
+      ">
+        <h2>HTML 태그의 제왕</h2>
+
+        <div class="movie">
+            <video width="100%" controls>
+                <source src="./videos/14.HTML태그의제왕.mp4" type="video/mp4">
+            </video>
+        </div>
+        <p>&nbsp;</p>
+
+        <p>우리는 지금까지<br/>
+            문서를 만드는 방법을 충분히 자세히 살펴봤습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>태그를 결합하는 방법을 완전히 마스터했고,<br/>
+            빈도수가 절대적으로 높은 태그들을 살펴봤습니다.</p>
+
+        <p><a href="https://www.instagram.com/h______________________y/" target="_blank"><img alt="" height="360"
+                                                                                              src="./web_img/7680.jpeg"
+                                                                                              width="640"/></a></p>
+
+        <p>앞으로 배울 것 보다,<br/>
+            지금까지 배운 것에 기쁨을 느끼셨으면 좋겠습니다.<br/>
+            기쁘시죠? ㅎㅎ</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>우리 수업에는 두개의 혁명적 순간이 있습니다.<br/>
+            하나는 태그라는 문법을 배운 순간이고,<br/>
+            또 하나는<br/>
+            지금부터 설명할 태그를 알게 된 순간입니다.<br/>
+            이 태그가 무엇일지 맞춰 보세요.</p>
+
+        <p><img alt="" height="360" src="./web_img/7681.jpeg" width="640"/></p>
+
+        <p>태그가 웹의 왕국이라면<br/>
+            지금부터 설명드릴 태그는<br/>
+            이 왕국의 제왕입니다.</p>
+
+        <p><a href="http://www.instagram.com/ea._.ad/" target="_blank"><img alt="" height="360"
+                                                                            src="./web_img/7682.jpeg" width="640"/></a>
+        </p>
+
+        <p>현대의 HTML은<br/>
+            150여개의 태그로 이루어져 있지만<br/>
+            이들 모두 이 태그의 아래에 있습니다.<br/>
+            이 태그가 무엇일까요?</p>
+
+        <p><img alt="" height="360" src="./web_img/7683.jpeg" width="640"/></p>
+
+        <p>검색엔진들은<br/>
+            이 태그 덕분에 전세계의 웹을 항해하면서<br/>
+            웹페이지들을 발견할 수 있고,<br/>
+            이 태그 덕분에 더 좋은<br/>
+            검색결과를 만들 수 있었습니다.<br/>
+            이 태그가 없다면 검색엔진은 존재하지 않았을 것입니다.<br/>
+            우리의 일상에서<br/>
+            검색엔진이 없다면 어떤 일이 생길지 생각해 보세요.<br/>
+            이 태그가 무엇일까요?</p>
+
+        <p><a href="http://www.nanaworks.co.kr"><em><u><img alt="" height="360" src="./web_img/7684.jpeg" width="640"/></u></em></a>
+        </p>
+
+        <p>이 태그는<br/>
+            도시의 길과<br/>
+            인체의 혈관과 같은 것입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p><img alt="" height="360" src="./web_img/7686.jpeg" width="640"/></p>
+
+        <p><br/>
+            이 태그가 없다면<br/>
+            전세계의 모든 웹페이지는<br/>
+            고립될 것이고,<br/>
+            정보혁명도 시작되지 않았을 것입니다.<br/>
+            이 태그가 무엇일까요?</p>
+
+        <p><img alt="" height="360" src="./web_img/7687.jpeg" width="640"/></p>
+
+        <p>이 태그는<br/>
+            매일 백 번 넘게 사용하는 기능을 표현하는 태그입니다.<br/>
+            하루에 백 번도 넘게 하는 일은 많지 않습니다.</p>
+
+        <p><img alt="" height="360" src="./web_img/7688.jpeg" width="640"/></p>
+
+        <p>HTML의 약자<br/>
+            HyperText Markup Language의<br/>
+            HyperText가 바로 이 태그를 의미합니다.</p>
+
+        <p><img alt="" height="360" src="./web_img/7689.jpeg" width="640"/></p>
+
+        <p>이 태그의 이름은 anchor의 첫글자 a입니다.<br/>
+            앵커는 배가 정박할 때 사용하는 닻을 의미합니다.<br/>
+            정보의 바다에 정박한다는 의미의 시적인 표현인<br/>
+            a 태그는 어떤 기능을 표현하는 것일까요?</p>
+
+        <p><img alt="" height="360" src="./web_img/7690.jpeg" width="640"/></p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p style="text-align: center;">이 태그는 바로</p>
+
+        <p>&nbsp;</p>
+
+        <p><a href="https://opentutorials.org/course/2722" target="_blank"><img alt="" height="360"
+                                                                                src="./web_img/7692.jpeg" width="640"/></a>
+        </p>
+
+        <p style="text-align: center;">&nbsp;</p>
+
+        <p style="text-align: center;">링크<br/>
+            입니다</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>우리 프로젝트의 내용 중에<br/>
+            아래 텍스트에<br/>
+            Hypertext Markup Language (HTML)<br/>
+            HTML의 공식 사용설명서 페이지를<br/>
+            링크로 걸어보겠습니다.<br/>
+            주소는 아래와 같습니다.<br/>
+            https://www.w3.org/TR/html5/</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>알려드리기 전에<br/>
+            링크 거는 방법을 직접 찾아보세요.<br/>
+            추천 검색어는 아래와 같습니다.<br/>
+            &nbsp;</p>
+
+        <p style="border: 2px solid #515151;
+padding: 0.3rem;
+    padding-left: 0.3rem;
+color: #515151;
+border-radius: 5px;
+background-image: url('./web_img/7580.png');
+background-repeat: no-repeat;
+padding-left: 2.6rem;
+background-position: 4px 1px;">html link</p>
+
+        <p>&nbsp;</p>
+
+        <p>아래와 같이 하시면 됩니다.<br/>
+            a는 anchor의 약자이고,<br/>
+            href는 <u><strong>H</strong></u>yperText <u><strong>Ref</strong></u>erence의 약자입니다.</p>
+
+        <p><a href="https://github.com/web-n/web1_html_internet/commit/3785ce6ee47eec8d46acc0d79fcb37d6b93956be"
+              target="_blank">변경사항&nbsp;</a></p>
+
+        <pre><code class="html">&#x3C;!doctype html&#x3E;
+&#x3C;html&#x3E;
+&#x3C;head&#x3E;
+  &#x3C;title&#x3E;WEB1 - html&#x3C;/title&#x3E;
+  &#x3C;meta charset=&#x22;utf-8&#x22;&#x3E;
+&#x3C;/head&#x3E;
+&#x3C;body&#x3E;
+  &#x3C;ol&#x3E;
+    &#x3C;li&#x3E;HTML&#x3C;/li&#x3E;
+    &#x3C;li&#x3E;CSS&#x3C;/li&#x3E;
+    &#x3C;li&#x3E;JavaScript&#x3C;/li&#x3E;
+  &#x3C;/ol&#x3E;
+  &#x3C;h1&#x3E;HTML&#x3C;/h1&#x3E;
+  &#x3C;p&#x3E;&#x3C;a href=&#x22;https://www.w3.org/TR/html5/&#x22; target=&#x22;_blank&#x22; title=&#x22;html5 specification&#x22;&#x3E;Hypertext Markup Language (HTML)&#x3C;/a&#x3E; is the standard markup language for &#x3C;strong&#x3E;creating &#x3C;u&#x3E;web&#x3C;/u&#x3E; pages&#x3C;/strong&#x3E; and web applications.Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
+  &#x3C;img src=&#x22;coding.jpg&#x22; width=&#x22;100%&#x22;&#x3E;
+  &#x3C;/p&#x3E;&#x3C;p style=&#x22;margin-top:45px;&#x22;&#x3E;HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets.
+  &#x3C;/p&#x3E;
+&#x3C;/body&#x3E;
+&#x3C;/html&#x3E;</code></pre>
+
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>위 예제에서<br/>
+            target=&quot;_blank&quot;는<br/>
+            링크를 클릭했을 때<br/>
+            새창에서 페이지가 열리게 하는 속성입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>또 title은<br/>
+            이 링크가 어떤 내용을 담고 있는지를<br/>
+            툴팁으로 보여주는 기능입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>자 이렇게 해서<br/>
+            웹을 웹답게 하는 가장 중요한 기능인<br/>
+            링크를 알아봤습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>링크를 소개하고 보니까<br/>
+            링크와 저의 관계에 대해서<br/>
+            이야기해 보고 싶어졌어요.<br/>
+            <img alt="" height="360" src="./web_img/7693.jpeg" width="640"/></p>
+
+        <p>저는 학교에 다닐&nbsp;때 공부를 잘 못했습니다.<br/>
+            딴 생각이 많은 학생이었거든요.<br/>
+            선생님이 무슨 말을 하면<br/>
+            자꾸 수업과는 관련이 없는 것들이 연상되서<br/>
+            잠깐 한눈 팔고 돌아와보면 진도가 보이지 않는 거에요.<br/>
+            특히 수학처럼 논리적인 과목은<br/>
+            정말 못했습니다.<br/>
+            수학포기자였죠.</p>
+
+        <p><img alt="" height="360" src="./web_img/7694.jpeg" width="640"/></p>
+
+        <p>제가 수업시간에<br/>
+            제일 많이 하는 딴 생각이 뭐였는지 아세요?<br/>
+            딴 생각하지 말아야지라는 딴 생각이었어요.<br/>
+            저는 그것이 그냥 저의 결함이라고 생각했습니다.<br/>
+            실제로 그 시대에 이런 성향은 결함이었습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>누구도 그렇게 이야기하지 않았지만,<br/>
+            저 스스로 나는<br/>
+            공부를 못하는 사람이고,<br/>
+            공부를 싫어하는 사람이라고 믿게 되었죠.<br/>
+            성적표가 움직이지 않는 증거였구요.<br/>
+            그렇게 저는 고등학교를 졸업했어요.</p>
+
+        <p><img alt="" height="360" src="./web_img/7695.jpeg" width="640"/></p>
+
+        <p>그리고 곧 웹이 뜬다는 소문이 돌기 시작했어요.<br/>
+            얼마 후에<br/>
+            집집마다 웹을 쓰기 위해서<br/>
+            인터넷을 도입하기 시작했습니다.</p>
+
+        <p><img alt="" height="360" src="./web_img/7696.jpeg" width="640"/></p>
+
+        <p>그 때부터 저는 링크를 통해서<br/>
+            제가 필요한 정보를 탐험하기 시작했어요.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>떠오르는 딴 생각들을 따라서<br/>
+            정신없이 링크를 따라다니다 보면<br/>
+            많은 것을 알게 되었습니다.</p>
+
+        <p><img alt="" height="360" src="./web_img/7697.jpeg" width="640"/></p>
+
+        <p>생각해 보면<br/>
+            인류 역사를 통틀어서<br/>
+            저처럼<br/>
+            수업시간에 딴 생각을 하는 사람이<br/>
+            얼마나 많았을까요?</p>
+
+        <p><img alt="" height="360" src="./web_img/7698.jpeg" width="640"/></p>
+
+        <p>제가 고등학교를 졸업한 직후에<br/>
+            인터넷과 웹이<br/>
+            인류 역사상 처음으로<br/>
+            퍼지기 시작했던 거에요.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>이것이 얼마나 큰 행운인지 모르겠습니다.<br/>
+            시대가 조금만 저를 비껴갔다면<br/>
+            저는 다른 인생을 살고 있었을거에요.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>처음엔 링크를 따라 여행하는 웹서핑을<br/>
+            공부라고 생각하지 않았지만,<br/>
+            이제는 그것이<br/>
+            진정한 공부라고 생각하게 되었어요.<br/>
+            또<br/>
+            나는 공부를 좋아하는 사람이<br/>
+            되었다는 것을 알게 되었구요.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>이 수업에 참여하고 계신 학우 여러분도<br/>
+            링크를 통해서<br/>
+            정보를 탐험하고,<br/>
+            문제를 해결하고 있으면서<br/>
+            그 과정이 즐겁다면<br/>
+            여러분은 이미<br/>
+            공부를 좋아하고,<br/>
+            잘하고 있는 것입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>그 사실을 인정하셨으면 좋겠습니다.</p>
+
+    </div>
+</div>
+</body>
+</html>

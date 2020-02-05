@@ -1,0 +1,465 @@
+<!doctype html>
+<html>
+<head>
+    <title>WEB</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="colors.js"></script>
+    <link rel="stylesheet" href="highlight/styles/railscasts.css">
+    <script src="highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+<h1><a href="index.html">WEB1</a></h1>
+<div id="grid">
+    <ol>
+        <li><a href="1.html">수업소개</a></li>
+        <li><a href="2.html">프로젝트의 동기</a></li>
+        <li><a href="3.html">기획</a></li>
+        <li><a href="4.html">코딩과 HTML</a></li>
+        <li><a href="5.html">HTML 코딩 실습 환경 준비</a></li>
+        <li><a href="6.html">기본문법 - 태그</a></li>
+        <li><a href="7.html">혁명적인 변화</a></li>
+        <li><a href="8.html">통계에 기반한 학습</a></li>
+        <li><a href="9.html">줄바꿈</a></li>
+        <li><a href="10.html">HTML이 중요한 이유</a></li>
+        <li><a href="11.html">최후의 문법 속성과 img</a></li>
+        <li><a href="12.html">부모자식과 목록</a></li>
+        <li><a href="13.html">문서의 구조와 슈퍼스타들</a></li>
+        <li><a href="14.html">태그의 제왕</a></li>
+        <li><a href="15.html">웹사이트 완성</a></li>
+        <li><a href="16.html">원시웹</a></li>
+        <li><a href="17.html">인터넷을 여는 열쇠 - 서버와 클라이언트</a></li>
+        <li><a href="18.html">웹호스팅 - github pages</a></li>
+        <li><a href="19.html">웹서버 운영하기</a></li>
+        <li><a href="19_1.html">웹서버 설치(윈도우)</a></li>
+        <li><a href="19_2.html">웹서버 설치(맥)</a></li>
+        <li><a href="19_3.html">웹서버 설치(리눅스)</a></li>
+        <li><a href="20.html">수업을 마치며 1</a></li>
+        <li><a href="21.html">수업을 마치며 2</a></li>
+        <li><a href="22.html">수업을 마치며 3</a></li>
+        <li><a href="code_power.html">부록 : 코드의 힘</a></li>
+        <li><a href="code_power_1.html">부록 : 코드의 힘 - 동영상 삽입</a></li>
+        <li><a href="code_power_2.html">부록 : 코드의 힘 - 댓글 기능 추가</a></li>
+        <li><a href="code_power_3.html">부록 : 코드의 힘 - 채팅 기능 추가</a></li>
+        <li><a href="code_power_4.html">부록 : 코드의 힘 - 방문자 분석기</a></li>
+    </ol>
+    <div id="article">
+        <input id="night_day" type="button" value="night" onclick="
+        nightDayHandler(this);
+      ">
+        <h2>인터넷을 여는 열쇠 : 서버와 클라이언트</h2>
+
+        <div class="movie">
+            <video width="100%" controls>
+                <source src="./videos/17.인터넷을%20여는%20열쇠%20-%20서버와%20클라이언트.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p style="text-align: center;">---</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>지금부터<br/>
+            인터넷이 동작하는<br/>
+            기본적인 원리를&nbsp;알아보겠습니다.</p>
+
+        <p><img alt="" height="360"
+                src="./web_img/7747.jpeg"
+                width="640"/></p>
+
+        <p>&nbsp;</p>
+
+        <p style="text-align: center;">질문입니다</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>인터넷이 동작하기 위해서는<br/>
+            컴퓨터가 최소 몇 대가 있어야 할까요?</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p style="text-align: center;">2대입니다</p>
+
+        <p style="text-align:center"><img alt="" height="360"
+                                          src="./web_img/7748.jpeg"
+                                          width="640"/></p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>1대는 인터넷이 아니고<br/>
+            3대는 본질적이지 않죠.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>2대의 컴퓨터가<br/>
+            서로 정보를 주고 받는 순간<br/>
+            인류는 완전히 새로운 존재가 되었습니다.</p>
+
+        <p><img alt="" height="360"
+                src="./web_img/7749.jpeg"
+                width="640"/></p>
+
+        <p>팀 버너스리는<br/>
+            인터넷을 이용해서<br/>
+            웹을 만들기로 합니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>이를 위해서<br/>
+            인터넷으로 연결된<br/>
+            2대의 컴퓨터를 장만합니다.</p>
+
+        <p><img alt="" height="360"
+                src="./web_img/7751.jpeg"
+                width="640"/></p>
+
+        <p>그리고 2개의 프로그램을 개발합니다.<br/>
+            각각의 프로그램에<br/>
+            웹브라우저와<br/>
+            웹서버라는<br/>
+            이름을 붙입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>웹서버가 설치된 컴퓨터에는<br/>
+            info.cern.ch라는 주소를 부여합니다.<br/>
+            또 이 컴퓨터의 어떤 디렉토리에<br/>
+            index.html이라는 파일을 저장합니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>이번엔<br/>
+            웹브라우저가 설치된 컴퓨터의 주소창에<br/>
+            http://info.cern.ch/index.html이라는 주소를 입력하고<br/>
+            엔터를 땅하고 칩니다.<br/>
+            그럼 어떤 일이 일어나는지를 따져보겠습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p><img alt="" height="360"
+                src="./web_img/7752.jpeg"
+                width="640"/></p>
+
+        <p>&nbsp;</p>
+
+        <p>웹브라우저가 설치된 컴퓨터는<br/>
+            인터넷을 통해서<br/>
+            전기적인 신호를<br/>
+            info.cern.ch라는 주소의 컴퓨터에게<br/>
+            찌릿하고 보냅니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>그 전기적인 신호 안에는 이런 내용이 적혀 있습니다.<br/>
+            &#39;나는 index.html 이라는 파일의 코드를 원합니다.&#39;</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>그럼 info.cern.ch에 설치된 웹서버라는 프로그램이<br/>
+            어떤 디렉토리에서 index.html이라는 파일을 찾습니다.<br/>
+            그리고 그 내용을 읽어서 전기적인 신호를 바꾼 후에<br/>
+            웹브라우저가 설치된 컴퓨터에 신호를 보냅니다.<br/>
+            &nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>그럼 웹브라우저가 설치된 컴퓨터에는<br/>
+            index.html 파일의 내용 즉 코드가 도착합니다.<br/>
+            웹브라우저는 그 코드를 읽어서<br/>
+            웹페이지를 화면에 출력합니다.<br/>
+            &nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>이 관계를 잘 보시면<br/>
+            웹브라우저가 설치된 컴퓨터와<br/>
+            웹서버가 설치된 컴퓨터가<br/>
+            서로 정보를 주고 받습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>이 중에서<br/>
+            웹브라우저가 깔린 컴퓨터는<br/>
+            정보를 요청하나요? 응답하나요?<br/>
+            요청합니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>또<br/>
+            웹서버가 깔린 컴퓨터는<br/>
+            정보를 응답하나요? 요청하나요?<br/>
+            응답합니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>인터넷을 만든 사람들은<br/>
+            2대의 컴퓨터가 서로 정보를 주고받을 때<br/>
+            각각의 컴퓨터를 역할에 따라서<br/>
+            어떻게 부를까를 고민했겠죠?<br/>
+            깊은 고민에 빠집니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>자본주의 사회에서<br/>
+            가장 중요한 관계가 무엇인가요?</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>부모와 자식?<br/>
+            주인과 노예?<br/>
+            아닙니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>바로<br/>
+            고객(갑)과 사업자(을)입니다.<br/>
+            고객을 영어로는 클라이언트(client)라고 합니다.<br/>
+            사업자를 영어로는 서버(server)라고 합니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>인터넷을 만든 사람들은<br/>
+            이 비유를 사용하기로 합니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>요청하는 컴퓨터를 클라이언트 컴퓨터<br/>
+            응답하는 컴퓨터를 서버 컴퓨터라고 부르기로 합니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>웹브라우저는 어떤 컴퓨터에서 동작하나요?<br/>
+            클라이언트 입니다.<br/>
+            그래서 웹브라우저를 다른 말로는 웹 클라이언트라고 합니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>웹서버는 어떤 컴퓨터에서 동작하나요?<br/>
+            서버입니다.<br/>
+            그래서 웹서버라고 하는 것입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>만약 여러분이 게임을 만든다면<br/>
+            사용자의 컴퓨터에 설치된 프로그램을 뭐라고 할까요?<br/>
+            게임 클라이언트라고 합니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>반대로<br/>
+            게임회사의 서버 컴퓨터에 설치된 프로그램을<br/>
+            게임 서버라고 하는 것입니다.</p>
+
+        <p><img alt="" height="360"
+                src="./web_img/7753.jpeg"
+                width="640"/></p>
+
+        <p>그럼<br/>
+            채팅 클라이언트와<br/>
+            채팅 서버는 무엇인지 아시겠죠?</p>
+
+        <p><img alt="" height="360"
+                src="./web_img/7754.jpeg"
+                width="640"/></p>
+
+        <p>서버와 클라이언트는<br/>
+            인터넷을 이용하는 모든 정보 시스템에 적용되는<br/>
+            문법과도 같습니다.<br/>
+            이것을 이해한다면<br/>
+            경험이 쌓일수록<br/>
+            인터넷에 대한 이해가 높아질 것입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>지금까지 우리 수업은<br/>
+            HTML이라는 컴퓨터 언어의 사용법을 배웠습니다.<br/>
+            다시말해서, 웹브라우저를 제어하는 방법을 배운 것입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>이제부터는<br/>
+            웹서버를 배울 것입니다.<br/>
+            웹서버하면 어떤 느낌이 드시나요?<br/>
+            낯설고 무섭죠?</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>웹브라우저는 어떤가요?<br/>
+            낯설고 무섭나요?<br/>
+            그렇지 않죠?</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>그런데 생각해 보면<br/>
+            웹브라우저는 물질인가요?<br/>
+            아닙니다. 논리적인 관념 같은 것입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p><br/>
+            그럼에도 불구하고<br/>
+            매일 웹브라우저를 사용하고<br/>
+            이것에 대해서 생각하다보면<br/>
+            마치 손에 잡히는 물질인 것처럼<br/>
+            구체적으로 느껴지게 됩니다.<br/>
+            익숙해지는 것이죠.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>마찬가지로<br/>
+            웹서버라는 프로그램도<br/>
+            웹브라우저와 마찬가지로<br/>
+            인터넷으로 다운받아서<br/>
+            컴퓨터에 설치한 후에<br/>
+            실행하면 되는 프로그램에 불과합니다.<br/>
+            &nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>필자가 좋아하는 일화가 하나 있습니다.<br/>
+            컴퓨터를 만든 사람 중의 한명인<br/>
+            폰노이만은 수학 천재였습니다.<br/>
+            그에게 수학을 잘 하는 법을 물었습니다.<br/>
+            폰노이만은 이렇게 대답했다고 합니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>수학은<br/>
+            이해하는 것이 아니라<br/>
+            익숙해지는 것입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>저는 공부의 목적은<br/>
+            익숙해지는 것이라고 생각합니다.<br/>
+            이해는 익숙해지기 위한 방법 중의 하나일 뿐입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>자꾸 생각하고, 이야기하고, 사용하다 보면<br/>
+            익숙해지게 됩니다.<br/>
+            언젠가는<br/>
+            웹서버도<br/>
+            웹브라우저처럼 익숙해지게 될 것입니다.<br/>
+            &nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>이제 우리의 관심사를<br/>
+            웹서버로 돌려 봅시다.<br/>
+            웹서버에 익숙해지면<br/>
+            내가 만든 컨텐츠를<br/>
+            인터넷을 사용할 수 있는 전 세계의 누구나<br/>
+            사용하도록 있도록 할 수 있습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>2개의 갈림길이 있습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p><br/>
+            하나는 여러분의 컴퓨터에 직접 웹서버를 설치하는 것입니다.<br/>
+            이것은 어렵습니다. 하지만 그 과정에서 많은 것을 알게 됩니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>또 하나의 갈림길은 웹서버를 제공해주는 업체를 이용하는 것입니다.<br/>
+            이런 업체들을 웹호스팅 업체라고 합니다.<br/>
+            이것은 쉽습니다. 하지만 많은 것이 감춰져 있습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>필자가 추천하는 방향은<br/>
+            웹호스팅으로 쉽게 목표를 달성한 후에<br/>
+            웹서버를 직접 설치하는 방법을 공부해 보세요.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>만약 웹서버가 어렵거나,<br/>
+            시간이 없다면 웹호스팅만 공부하셔도 됩니다.</p>
+
+        <p><img alt="" height="360"
+                src="./web_img/7750.jpeg"
+                width="640"/></p>
+
+    </div>
+</div>
+</body>
+</html>

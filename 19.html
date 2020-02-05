@@ -1,0 +1,263 @@
+<!doctype html>
+<html>
+<head>
+    <title>WEB</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="colors.js"></script>
+    <link rel="stylesheet" href="highlight/styles/railscasts.css">
+    <script src="highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+<h1><a href="index.html">WEB1</a></h1>
+<div id="grid">
+    <ol>
+        <li><a href="1.html">수업소개</a></li>
+        <li><a href="2.html">프로젝트의 동기</a></li>
+        <li><a href="3.html">기획</a></li>
+        <li><a href="4.html">코딩과 HTML</a></li>
+        <li><a href="5.html">HTML 코딩 실습 환경 준비</a></li>
+        <li><a href="6.html">기본문법 - 태그</a></li>
+        <li><a href="7.html">혁명적인 변화</a></li>
+        <li><a href="8.html">통계에 기반한 학습</a></li>
+        <li><a href="9.html">줄바꿈</a></li>
+        <li><a href="10.html">HTML이 중요한 이유</a></li>
+        <li><a href="11.html">최후의 문법 속성과 img</a></li>
+        <li><a href="12.html">부모자식과 목록</a></li>
+        <li><a href="13.html">문서의 구조와 슈퍼스타들</a></li>
+        <li><a href="14.html">태그의 제왕</a></li>
+        <li><a href="15.html">웹사이트 완성</a></li>
+        <li><a href="16.html">원시웹</a></li>
+        <li><a href="17.html">인터넷을 여는 열쇠 - 서버와 클라이언트</a></li>
+        <li><a href="18.html">웹호스팅 - github pages</a></li>
+        <li><a href="19.html">웹서버 운영하기</a></li>
+        <li><a href="19_1.html">웹서버 설치(윈도우)</a></li>
+        <li><a href="19_2.html">웹서버 설치(맥)</a></li>
+        <li><a href="19_3.html">웹서버 설치(리눅스)</a></li>
+        <li><a href="20.html">수업을 마치며 1</a></li>
+        <li><a href="21.html">수업을 마치며 2</a></li>
+        <li><a href="22.html">수업을 마치며 3</a></li>
+        <li><a href="code_power.html">부록 : 코드의 힘</a></li>
+        <li><a href="code_power_1.html">부록 : 코드의 힘 - 동영상 삽입</a></li>
+        <li><a href="code_power_2.html">부록 : 코드의 힘 - 댓글 기능 추가</a></li>
+        <li><a href="code_power_3.html">부록 : 코드의 힘 - 채팅 기능 추가</a></li>
+        <li><a href="code_power_4.html">부록 : 코드의 힘 - 방문자 분석기</a></li>
+    </ol>
+    <div id="article">
+        <input id="night_day" type="button" value="night" onclick="
+        nightDayHandler(this);
+      ">
+        <h2>웹서버 운영하기</h2>
+        <h2>웹서버 소개</h2>
+
+        <div class="movie">
+            <video width="100%" controls>
+                <source src="./videos/19.웹서버운영하기.mp4" type="video/mp4">
+            </video>
+        </div>
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p style="text-align: center;">---</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>이번 시간에는<br/>
+            내 컴퓨터에 웹서버를 설치해서<br/>
+            누구나 내 컴퓨터에 있는 웹페이지를<br/>
+            볼 수 있도록 해 보겠습니다.</p>
+
+        <p><img alt="" height="360" src="./web_img/7883.jpeg" width="640"/></p>
+
+        <p>이 과정은<br/>
+            꽤 많은 지식이 필요하기 때문에<br/>
+            좀 어렵습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>대신 인터넷이 동작하는 원리를<br/>
+            알 수 있다는 것은 큰 장점입니다.</p>
+
+        <p><img alt="" height="360" src="./web_img/7884.jpeg" width="640"/></p>
+
+        <p>그리고 한 가지 당부드리고 싶은 것은<br/>
+            실습이 잘 작동하지 않을 가능성이 매우 높아요.<br/>
+            인터넷은 실제로는 매우 복잡한 시스템이거든요.<br/>
+            제대로 작동하는 이유는 한 가지 입니다만,<br/>
+            작동하지 않는 이유는 수십 가지가 넘기 때문입니다.</p>
+
+        <p><img alt="" height="360" src="./web_img/7885.jpeg" width="640"/></p>
+
+        <p>혹 작동하지 않는다고 걱정할 필요는 없습니다.<br/>
+            실제로는 웹호스팅을 많이 사용하거든요.<br/>
+            그냥 제대로 동작하고 있다고 치면 됩니다.<br/>
+            우리에게는 상상력이 있잖아요.</p>
+
+        <p><a href="https://www.instagram.com/sayhelloanbu/" target="_blank"><img alt="" height="360"
+                                                                                  src="./web_img/7886.jpeg"
+                                                                                  width="640"/></a></p>
+
+        <p>물론,<br/>
+            문제를 해결하기 위해서 노력하는 것은<br/>
+            언제나 좋은 자세입니다.<br/>
+            대신,<br/>
+            이것만 기억해 주세요.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>우리가 하나의 문제를 해결하는데<br/>
+            며칠이 걸릴 수도 있습니다.<br/>
+            <a href="https://www.facebook.com/ggull.life/" target="_blank"><img alt="" height="360"
+                                                                                src="./web_img/7887.jpeg" width="640"/></a>
+        </p>
+
+        <p>하지만<br/>
+            우리는 하나의 문제만 해결한 것이 아니라,<br/>
+            그 과정에서 수많은 지식과 경험을 얻게 됩니다.<br/>
+            힘내시라는 말입니다.<br/>
+            현명한 선택을 기대합니다.</p>
+
+        <p><img alt="" height="360" src="./web_img/7888.jpeg" width="640"/></p>
+
+        <p>우선 우리가 해야 할 일은<br/>
+            자신의 컴퓨터에<br/>
+            웹서버라는 프로그램을<br/>
+            설치해야 합니다.</p>
+
+        <p><a href="https://www.instagram.com/seon.studio/" target="_blank"><img alt="" height="360"
+                                                                                 src="./web_img/7890.jpeg" width="640"/></a>
+        </p>
+
+        <p>웹브라우저는<br/>
+            제품명이 아니라<br/>
+            제품군이죠?</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>웹서버도 마찬가지입니다.<br/>
+            웹서버라는 제품군에는<br/>
+            여러 제품들이 있습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>Apache<br/>
+            IIS<br/>
+            Nginx</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>이 중에서<br/>
+            우리가 사용할 소프트웨어는<br/>
+            아파치입니다.</p>
+
+        <p><img alt="" height="360" src="./web_img/7891.jpeg" width="640"/></p>
+
+        <p>아파치는<br/>
+            필자가 매우 존경하는 소프트웨어입니다.<br/>
+            오픈소스이고<br/>
+            무료인<br/>
+            공공재입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>이 그래프는 웹서버의 시장점유율입니다. 보시는 것처럼 아파치는 한 번도 일등의 자리를 빼앗긴 적이 없는 진정한 제왕입니다.</p>
+
+        <p><img alt="" height="360" src="./web_img/7892.jpeg" width="640"/></p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>사실 우리는<br/>
+            알았든, 몰랐든<br/>
+            하루에도 수백 번씩<br/>
+            아파치의 신세를 지고 있었습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>이런 일을 위해서<br/>
+            헌신하고 있는<br/>
+            이름도 없고,<br/>
+            얼굴도 없는<br/>
+            사람들에게 감사한 마음을 가져 보세요.<br/>
+            소프트웨어의 세계는<br/>
+            이렇게 낭만적인 사람들로<br/>
+            가득차 있습니다.</p>
+
+        <p><img alt="" height="360" src="./web_img/7893.jpeg" width="640"/></p>
+
+        <p>그럼 이제<br/>
+            아파치를<br/>
+            운영체제별로<br/>
+            설치해야 합니다.</p>
+
+        <p><a href="http://www.nanaworks.co.kr" target="_blank"><img alt="" height="360" src="./web_img/7894.jpeg"
+                                                                     width="640"/></a></p>
+
+        <p>이번 장은 여기서 일단 끝입니다.<br/>
+            다음 장에서<br/>
+            윈도우<br/>
+            맥<br/>
+            리눅스에 대한 수업이<br/>
+            별도로 준비되어 있습니다.<br/>
+            잘 찾아서 학습해 주세요.</p>
+
+        <p><a href="https://www.instagram.com/seon.studio/" target="_blank"><img alt="" height="360"
+                                                                                 src="./web_img/7895.jpeg" width="640"/></a>
+        </p>
+
+        <p>그리고 미래에는<br/>
+            웹서버를 설치하는 방법이<br/>
+            달라져 있을 수 있습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>그래서<br/>
+            자신의 문제를 스스로 해결할 수 있는<br/>
+            방법을 알아야 합니다.<br/>
+            이를 위해서 검색어를 추천해 드리겠습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p style="border: 2px solid #515151;
+padding: 0.3rem;
+    padding-left: 0.3rem;
+color: #515151;
+border-radius: 5px;
+background-image: url('./web_img/7580.png');
+background-repeat: no-repeat;
+padding-left: 2.6rem;
+background-position: 4px 1px;">how to install apache http server (운영체제 이름)</p>
+
+        <p>&nbsp;</p>
+
+        <p>다음 장에서는<br/>
+            운영체제별로<br/>
+            아파치를 설치하는 법을<br/>
+            살펴보겠습니다.</p>
+
+    </div>
+</div>
+</body>
+</html>

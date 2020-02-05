@@ -1,0 +1,385 @@
+<!doctype html>
+<html>
+<head>
+    <title>WEB</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="colors.js"></script>
+    <link rel="stylesheet" href="highlight/styles/railscasts.css">
+    <script src="highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+<h1><a href="index.html">WEB1</a></h1>
+<div id="grid">
+    <ol>
+        <li><a href="1.html">수업소개</a></li>
+        <li><a href="2.html">프로젝트의 동기</a></li>
+        <li><a href="3.html">기획</a></li>
+        <li><a href="4.html">코딩과 HTML</a></li>
+        <li><a href="5.html">HTML 코딩 실습 환경 준비</a></li>
+        <li><a href="6.html">기본문법 - 태그</a></li>
+        <li><a href="7.html">혁명적인 변화</a></li>
+        <li><a href="8.html">통계에 기반한 학습</a></li>
+        <li><a href="9.html">줄바꿈</a></li>
+        <li><a href="10.html">HTML이 중요한 이유</a></li>
+        <li><a href="11.html">최후의 문법 속성과 img</a></li>
+        <li><a href="12.html">부모자식과 목록</a></li>
+        <li><a href="13.html">문서의 구조와 슈퍼스타들</a></li>
+        <li><a href="14.html">태그의 제왕</a></li>
+        <li><a href="15.html">웹사이트 완성</a></li>
+        <li><a href="16.html">원시웹</a></li>
+        <li><a href="17.html">인터넷을 여는 열쇠 - 서버와 클라이언트</a></li>
+        <li><a href="18.html">웹호스팅 - github pages</a></li>
+        <li><a href="19.html">웹서버 운영하기</a></li>
+        <li><a href="19_1.html">웹서버 설치(윈도우)</a></li>
+        <li><a href="19_2.html">웹서버 설치(맥)</a></li>
+        <li><a href="19_3.html">웹서버 설치(리눅스)</a></li>
+        <li><a href="20.html">수업을 마치며 1</a></li>
+        <li><a href="21.html">수업을 마치며 2</a></li>
+        <li><a href="22.html">수업을 마치며 3</a></li>
+        <li><a href="code_power.html">부록 : 코드의 힘</a></li>
+        <li><a href="code_power_1.html">부록 : 코드의 힘 - 동영상 삽입</a></li>
+        <li><a href="code_power_2.html">부록 : 코드의 힘 - 댓글 기능 추가</a></li>
+        <li><a href="code_power_3.html">부록 : 코드의 힘 - 채팅 기능 추가</a></li>
+        <li><a href="code_power_4.html">부록 : 코드의 힘 - 방문자 분석기</a></li>
+    </ol>
+    <div id="article">
+        <input id="night_day" type="button" value="night" onclick="
+        nightDayHandler(this);
+      ">
+        <h2>HTML이 중요한 이유</h2>
+
+        <div class="movie">
+            <video width="100%" controls>
+                <source src="./videos/10.html이%20중요한%20이유.mp4" type="video/mp4">
+            </video>
+        </div>
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p style="text-align: center;">---</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>누구나 기초가 중요하다고 말합니다.<br/>
+            하지만 기초가 중요하다는 말을 잘 들어보면<br/>
+            응용으로 가는 과정으로서<br/>
+            기초가 중요하다는 뜻인 경우도 많더라구요.</p>
+
+        <p><img alt="" height="360" src="./web_img/7645.jpeg" width="640"/></p>
+
+        <p>그런데 사실 기초는<br/>
+            기초만으로도 할 수 있는 일이 많습니다.<br/>
+            우리는 &#39;웹사이트 만들기&#39;라는<br/>
+            큰 목표를 향해서 나아가고 있지만,<br/>
+            지금까지 배운 것으로도<br/>
+            할 수 있는 일이 많습니다.<br/>
+            &nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>이번 시간에는<br/>
+            기초만으로도 할 수 있는 일을 살펴볼 거에요.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>또<br/>
+            HTML이 얼마나 중요한지를<br/>
+            상기해 보는 시간이 될 것입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>아래 화면은 여러분이 실습하고 있는 <a href="https://opentutorials.org" target="_blank">생활코딩 홈페이지</a>의 미래의 모습입니다. 실습이 아니니까 그냥
+            구경만하셔도 됩니다.&nbsp;<a href="https://youtu.be/MgZRbCaF_rY?t=39" target="_blank">(동영상참고 :
+                https://youtu.be/MgZRbCaF_rY?t=39)</a></p>
+
+        <p><img alt="" height="438" src="./web_img/7637.png" width="640"/></p>
+
+        <p>&nbsp;</p>
+
+        <p>아시다시피 블로그, SNS, 이메일과 같은 서비스들은 위와 같은 글쓰기 기능이 있습니다. 이번 시간에는<br/>
+            글을 쓸 때 내부적으로는 어떤 일이 일어나는가를 살펴보겠습니다. 동시에 일반인이 글을 쓸 때와 우리처럼 배운 사람이 글을 쓸 때 어떤 점이 다른지를 비교해보고, 그것이 얼마나 큰 차이를
+            만드는지도 살펴보겠습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>본문을 작성해 봅시다.<br/>
+            지식인과 일반인이 모두<br/>
+            coding이라는 텍스트를<br/>
+            제목으로 만든다면<br/>
+            어떻게 다르게 할 것인지를 비교해 보시죠.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>일반인은 coding을 제목처럼 보이도록 글씨 크기를 키우고, 진하게 표시할 것입니다.</p>
+
+        <p><img alt="" height="106" src="./web_img/7638.png" width="640"/></p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>지식인은 제목을 표현할 때 포맷(format)이라고 되어 있는 부분에 관심을 갖습니다. 그리고 적당한 크기의 제목(title)을 선택합니다.</p>
+
+        <p><img alt="" height="201" src="./web_img/7640.png" width="640"/></p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>아마 지금까지<br/>
+            포맷이라는 기능이 눈 앞에 있어도<br/>
+            눈에 보이지 않았을 거에요.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>이 수업이 끝나고 나면<br/>
+            포맷을 사용하기 시작할 것입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>저는 이것이 공부의 효용이라고 생각합니다.<br/>
+            공부를 안 하면<br/>
+            눈 앞에 분명히 보이는 것임에도<br/>
+            뇌가 무시합니다.<br/>
+            안 보이는 것과 다름없습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>공부를 하면<br/>
+            보이지 않던 것이 보이기 시작합니다.<br/>
+            들리지 않던&nbsp;것이 들리기 시작합니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>이번엔 Source라고 하는 버튼을 눌러 봅시다. 편집기에 따라서 html이라고 적혀 있는 경우도 있습니다. 이 버튼도공부하기 전에는 보이지 않았겠죠.</p>
+
+        <p><img alt="" height="229" src="./web_img/7642.png" width="640"/></p>
+
+        <p>놀라운 사실을 알 수 있습니다. 우리가 이런 편집기를 이용해서 글을 쓴다는 것은 실제로는 HTML 코드를 생성하고 있었다는 것입니다. 편집기는 우리 대신에 HTML 코드를 만드는 기계였던
+            것이죠.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>일반인과 지식인이 만든 코드의 차이를 살펴보시죠.</p>
+
+        <pre class="brush: html">
+&lt;h3&gt;coding&lt;/h3&gt;</pre>
+
+        <p>지식인의 제목은 coding이 제목이라는 의미를 나타내고 있습니다.</p>
+
+        <pre class="brush: html">
+&lt;strong&gt;&lt;span style=&quot;font-size:22px;&quot;&gt;coding&lt;/span&gt;&lt;/strong&gt;</pre>
+
+        <p>일반인의 제목은 coding이 22px의 크기를 가졌고, 진하게 표시되어야 한다는 시각적인 장식만을 가지고 있습니다.제목이라는 정보는 어디에도 없습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>일반인의 제목과<br/>
+            지식인의 제목은<br/>
+            눈으로 보기에는<br/>
+            완전히 같습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>하지만,<br/>
+            똑같은 모양의 두 제목은<br/>
+            코드가 완전히 다릅니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p><br/>
+            코드가 다른 것이<br/>
+            얼마나 중요한 지를<br/>
+            공감할 수 있게 설득해 보겠습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>위와 같이<br/>
+            일반인과 지식인의 코드가 있을 때<br/>
+            누구의 코드가 더 좋은 지에 대한 심판을<br/>
+            검색엔진에게 맡겨 보겠습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p><img alt="일반인과 지식인 코드의 차이" height="75" src="./web_img/7644.png" width="640"/></p>
+
+        <p>&nbsp;</p>
+
+        <p>일반인과 지식인이<br/>
+            10년 동안<br/>
+            1억개의 웹페이지를<br/>
+            만들었다면<br/>
+            어떤 차이가 생길까를 봅시다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>검색엔진은<br/>
+            전세계의 웹페이지를 분석합니다.<br/>
+            그리고<br/>
+            사용자가 검색을 했을 때<br/>
+            검색결과를 보여줍니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>만약 사용자가<br/>
+            검색엔진에게<br/>
+            coding이라는 정보를 검색했다면<br/>
+            검색엔진은<br/>
+            &lt;h3&gt;로 감싸진 페이지와<br/>
+            &lt;strong&gt;&lt;span style=&quot;font-size:22px&quot;&gt;로<br/>
+            감싸진 페이지 중에<br/>
+            어떤 페이지를 먼저 보여줄까요?</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>&lt;h3&gt;로 감싸진 페이지를<br/>
+            더 먼저 보여줄 것입니다.<br/>
+            &lt;h3&gt;는 제목을 의미 하지만&nbsp;<br/>
+            &lt;strong&gt;&lt;span style=&quot;font-size:22px&quot;&gt;는&nbsp;<br/>
+            시각적인 장식이기 때문입니다.&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>오늘날 정보의 세계에서<br/>
+            검색엔진의 검색결과에서 노출되느냐는<br/>
+            실제로 존재하는냐,<br/>
+            존재하지 않는냐의 문제라고<br/>
+            할 수 있습니다.<br/>
+            100페이지 밖에 있는 검색결과를 누가 보겠어요.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>의미에 맞는 태그로 웹페이지를 만든 지식인과<br/>
+            그렇지 않은 일반인은<br/>
+            10년 뒤에 인생이 달라져 있을 것입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>정보사회에서<br/>
+            HTML을 의미에 맞게 잘 사용하는 것은<br/>
+            비즈니스적인 측면에서 매우 중요합니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>한편,<br/>
+            HTML이 중요한 또 하나의 이유가 있습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p><br/>
+            웹의 핵심적인 철학은 접근성입니다.<br/>
+            웹은 모든 운영체제에서 동작하고,<br/>
+            웹페이지의 소스코드는 누구나 볼 수 있고,<br/>
+            웹은 저작권이 없는 순수한 공공재입니다.<br/>
+            웹의 이런 특징들이<br/>
+            웹을 다른 기술들과 구별되는<br/>
+            특별한 것으로 만든다고 생각합니다.</p>
+
+        <p><img alt="" height="360" src="./web_img/7646.jpeg" width="640"/></p>
+
+        <p>거기에 더해서<br/>
+            누구나 차별없이 정보에 접근할 수 있어야 한다는 철학을<br/>
+            접근성(accessibility)라고 합니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p><br/>
+            특히 웹이 중요하게 생각하는 접근성은<br/>
+            신체적인 장애가 있는 사람도<br/>
+            웹을 통해서 정보에 접근할 수 있어야 한다는 것입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>예를 들어서<br/>
+            시각장애가 있는 사람은<br/>
+            스크린리더(screen reader)와 같은 프로그램을 이용해서<br/>
+            정보를 청각화해서 접하게 됩니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>그런데<br/>
+            웹페이지를 예쁘게 하기 위해서<br/>
+            HTML을 사용하지 않고<br/>
+            웹페이지 전체를 이미지로 만든다면<br/>
+            시각 장애가 있는 분들에게는<br/>
+            암흑과도 같은 상태가 됩니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>자신도 모르는 사이에 누군가를 소외시키고 있는 것입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>반대로,<br/>
+            HTML을 의미론적으로 잘 사용한다면<br/>
+            자신도 모르는 사이에 누군가에게 정말 큰 도움을 주고 있는 것입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>이렇게<br/>
+            HTML은<br/>
+            비즈니스적인 측면에서도 중요하지만,<br/>
+            휴머니즘적인 측면에서도 중요한 기술입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p><img alt="" height="360" src="./web_img/7647.jpeg" width="640"/></p>
+
+    </div>
+</div>
+</body>
+</html>

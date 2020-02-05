@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+    <title>WEB</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="colors.js"></script>
+    <link rel="stylesheet" href="highlight/styles/railscasts.css">
+    <script src="highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+<h1><a href="index.html">WEB1</a></h1>
+<div id="grid">
+    <ol>
+        <li><a href="1.html">수업소개</a></li>
+        <li><a href="2.html">프로젝트의 동기</a></li>
+        <li><a href="3.html">기획</a></li>
+        <li><a href="4.html">코딩과 HTML</a></li>
+        <li><a href="5.html">HTML 코딩 실습 환경 준비</a></li>
+        <li><a href="6.html">기본문법 - 태그</a></li>
+        <li><a href="7.html">혁명적인 변화</a></li>
+        <li><a href="8.html">통계에 기반한 학습</a></li>
+        <li><a href="9.html">줄바꿈</a></li>
+        <li><a href="10.html">HTML이 중요한 이유</a></li>
+        <li><a href="11.html">최후의 문법 속성과 img</a></li>
+        <li><a href="12.html">부모자식과 목록</a></li>
+        <li><a href="13.html">문서의 구조와 슈퍼스타들</a></li>
+        <li><a href="14.html">태그의 제왕</a></li>
+        <li><a href="15.html">웹사이트 완성</a></li>
+        <li><a href="16.html">원시웹</a></li>
+        <li><a href="17.html">인터넷을 여는 열쇠 - 서버와 클라이언트</a></li>
+        <li><a href="18.html">웹호스팅 - github pages</a></li>
+        <li><a href="19.html">웹서버 운영하기</a></li>
+        <li><a href="19_1.html">웹서버 설치(윈도우)</a></li>
+        <li><a href="19_2.html">웹서버 설치(맥)</a></li>
+        <li><a href="19_3.html">웹서버 설치(리눅스)</a></li>
+        <li><a href="20.html">수업을 마치며 1</a></li>
+        <li><a href="21.html">수업을 마치며 2</a></li>
+        <li><a href="22.html">수업을 마치며 3</a></li>
+        <li><a href="code_power.html">부록 : 코드의 힘</a></li>
+        <li><a href="code_power_1.html">부록 : 코드의 힘 - 동영상 삽입</a></li>
+        <li><a href="code_power_2.html">부록 : 코드의 힘 - 댓글 기능 추가</a></li>
+        <li><a href="code_power_3.html">부록 : 코드의 힘 - 채팅 기능 추가</a></li>
+        <li><a href="code_power_4.html">부록 : 코드의 힘 - 방문자 분석기</a></li>
+    </ol>
+    <div id="article">
+        <input id="night_day" type="button" value="night" onclick="
+        nightDayHandler(this);
+      ">
+        <h2>부록 : 코드의 힘 - 채팅 기능 추가</h2>
+        <div class="movie">
+            <video width="100%" controls>
+                <source src="./videos/부록-코드의힘-채팅기능추가.mp4" type="video/mp4">
+            </video>
+        </div>
+        <h3>소스코드</h3>
+
+        <p><a href="https://github.com/web-n/web1_html_internet/commit/0b084b6211a6c07a7c84ad3a8d5a5d163c960277"
+              target="_blank">변경사항</a></p>
+
+        <pre><code class="html">&#x3C;!doctype html&#x3E;
+&#x3C;html&#x3E;
+&#x3C;head&#x3E;
+  &#x3C;title&#x3E;WEB1 - HTML&#x3C;/title&#x3E;
+  &#x3C;meta charset=&#x22;utf-8&#x22;&#x3E;
+&#x3C;/head&#x3E;
+&#x3C;body&#x3E;
+  &#x3C;h1&#x3E;&#x3C;a href=&#x22;index.html&#x22;&#x3E;WEB&#x3C;/a&#x3E;&#x3C;/h1&#x3E;
+  &#x3C;ol&#x3E;
+    &#x3C;li&#x3E;&#x3C;a href=&#x22;1.html&#x22;&#x3E;HTML&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+    &#x3C;li&#x3E;&#x3C;a href=&#x22;2.html&#x22;&#x3E;CSS&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+    &#x3C;li&#x3E;&#x3C;a href=&#x22;3.html&#x22;&#x3E;JavaScript&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+  &#x3C;/ol&#x3E;
+  &#x3C;h2&#x3E;HTML&#x3C;/h2&#x3E;
+  &#x3C;p&#x3E;&#x3C;a href=&#x22;https://www.w3.org/TR/html5/&#x22; target=&#x22;_blank&#x22; title=&#x22;html5 speicification&#x22;&#x3E;Hypertext Markup Language (HTML)&#x3C;/a&#x3E; is the standard markup language for &#x3C;strong&#x3E;creating &#x3C;u&#x3E;web&#x3C;/u&#x3E; pages&#x3C;/strong&#x3E; and web applications.Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
+  &#x3C;img src=&#x22;coding.jpg&#x22; width=&#x22;100%&#x22;&#x3E;
+  &#x3C;/p&#x3E;&#x3C;p style=&#x22;margin-top:45px;&#x22;&#x3E;HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets.
+  &#x3C;/p&#x3E;
+  &#x3C;!--Start of Tawk.to Script--&#x3E;
+&#x3C;script type=&#x22;text/javascript&#x22;&#x3E;
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement(&#x22;script&#x22;),s0=document.getElementsByTagName(&#x22;script&#x22;)[0];
+s1.async=true;
+s1.src=&#x27;https://embed.tawk.to/57a72994c11fe69b0bd8fa90/default&#x27;;
+s1.charset=&#x27;UTF-8&#x27;;
+s1.setAttribute(&#x27;crossorigin&#x27;,&#x27;*&#x27;);
+s0.parentNode.insertBefore(s1,s0);
+})();
+&#x3C;/script&#x3E;
+&#x3C;!--End of Tawk.to Script--&#x3E;
+&#x3C;/body&#x3E;
+&#x3C;/html&#x3E;</code></pre>
+
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,376 @@
+<!doctype html>
+<html>
+<head>
+    <title>WEB</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="colors.js"></script>
+    <link rel="stylesheet" href="highlight/styles/railscasts.css">
+    <script src="highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+<h1><a href="index.html">WEB1</a></h1>
+<div id="grid">
+    <ol>
+        <li><a href="1.html">수업소개</a></li>
+        <li><a href="2.html">프로젝트의 동기</a></li>
+        <li><a href="3.html">기획</a></li>
+        <li><a href="4.html">코딩과 HTML</a></li>
+        <li><a href="5.html">HTML 코딩 실습 환경 준비</a></li>
+        <li><a href="6.html">기본문법 - 태그</a></li>
+        <li><a href="7.html">혁명적인 변화</a></li>
+        <li><a href="8.html">통계에 기반한 학습</a></li>
+        <li><a href="9.html">줄바꿈</a></li>
+        <li><a href="10.html">HTML이 중요한 이유</a></li>
+        <li><a href="11.html">최후의 문법 속성과 img</a></li>
+        <li><a href="12.html">부모자식과 목록</a></li>
+        <li><a href="13.html">문서의 구조와 슈퍼스타들</a></li>
+        <li><a href="14.html">태그의 제왕</a></li>
+        <li><a href="15.html">웹사이트 완성</a></li>
+        <li><a href="16.html">원시웹</a></li>
+        <li><a href="17.html">인터넷을 여는 열쇠 - 서버와 클라이언트</a></li>
+        <li><a href="18.html">웹호스팅 - github pages</a></li>
+        <li><a href="19.html">웹서버 운영하기</a></li>
+        <li><a href="19_1.html">웹서버 설치(윈도우)</a></li>
+        <li><a href="19_2.html">웹서버 설치(맥)</a></li>
+        <li><a href="19_3.html">웹서버 설치(리눅스)</a></li>
+        <li><a href="20.html">수업을 마치며 1</a></li>
+        <li><a href="21.html">수업을 마치며 2</a></li>
+        <li><a href="22.html">수업을 마치며 3</a></li>
+        <li><a href="code_power.html">부록 : 코드의 힘</a></li>
+        <li><a href="code_power_1.html">부록 : 코드의 힘 - 동영상 삽입</a></li>
+        <li><a href="code_power_2.html">부록 : 코드의 힘 - 댓글 기능 추가</a></li>
+        <li><a href="code_power_3.html">부록 : 코드의 힘 - 채팅 기능 추가</a></li>
+        <li><a href="code_power_4.html">부록 : 코드의 힘 - 방문자 분석기</a></li>
+    </ol>
+    <div id="article">
+        <input id="night_day" type="button" value="night" onclick="
+        nightDayHandler(this);
+      ">
+        <h2>최후의 문법 속성과 img</h2>
+        <div class="movie">
+            <video width="100%" controls>
+                <source src="./videos/11.최후의문법-속성%20&%20img.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p style="text-align: center;">---</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>지금까지<br/>
+            가장 중요한 문법인<br/>
+            태그를 배웠습니다.</p>
+
+        <p><img alt="" height="360"
+                src="./web_img/7660.png" width="640"/>
+        </p>
+
+        <p>이번 시간에는<br/>
+            태그의 심화된 문법인<br/>
+            속성(attribute)을 배우게 될 것입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>이것까지 배우면<br/>
+            HTML의 기본 문법을<br/>
+            완전히 마스터한 것이 됩니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>한편<br/>
+            아주 인기있는 태그인<br/>
+            img 태그도 살펴보겠습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>우리가 만든 예제를 보면<br/>
+            글씨만 있다 보니까 좀 삭막해요.<br/>
+            이제 여러분은 무엇을 하고 싶나요?<br/>
+            본문에 이미지를 넣고 싶어졌을 거에요.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>웹이 처음 등장했을 때는<br/>
+            본문에 이미지를 넣는 기능도 없었습니다.<br/>
+            웹페이지에<br/>
+            이미지를 처음으로 넣을 수 있게 되었을 때<br/>
+            사람들은 얼마나 행복했는지 상상해 보세요.<br/>
+            해봅시다.</p>
+
+        <p>&nbsp;</p>
+
+        <p><br/>
+            이미지를 넣는 태그의 이름은 img입니다.<br/>
+            image의 줄임말이겠죠?<br/>
+            아래와 같이 코드를 작성해 봤습니다.</p>
+
+        <pre><code class="html">&#x3C;h1&#x3E;HTML&#x3C;/h1&#x3E;
+&#x3C;p&#x3E;Hypertext Markup Language (HTML) is the standard markup language for &#x3C;strong&#x3E;creating &#x3C;u&#x3E;web&#x3C;/u&#x3E; pages&#x3C;/strong&#x3E; and web applications.Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
+&#x3C;img&#x3E;
+&#x3C;/p&#x3E;&#x3C;p style=&#x22;margin-top:45px;&#x22;&#x3E;HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets. &#x3C;/p&#x3E;</code></pre>
+
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>동작하지 않습니다. 왜요?</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>어떤 이미지를 불러올 지에 대한 정보가<br/>
+            부족하기 때문입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>태그를 만든 사람들은<br/>
+            태그 이름만으로는 정보가 부족하다는 것을 알게 되었습니다.<br/>
+            그래서 고민에 빠집니다.<br/>
+            그리고 새로운 문법을 도입하게 됩니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>속성(attribute)<br/>
+            입니다.<br/>
+            속성을 적용해 봅시다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>img 태그에<br/>
+            source의 줄임말인 src를 붙여서<br/>
+            코드를 아래와 같이 만들어 보세요.</p>
+
+        <pre><code class="html">&#x3C;h1&#x3E;HTML&#x3C;/h1&#x3E;
+&#x3C;p&#x3E;Hypertext Markup Language (HTML) is the standard markup language for &#x3C;strong&#x3E;creating &#x3C;u&#x3E;web&#x3C;/u&#x3E; pages&#x3C;/strong&#x3E; and web applications.Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
+&#x3C;img src=&#x22;https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/module/3135/7648.png&#x22;&#x3E;
+&#x3C;/p&#x3E;&#x3C;p style=&#x22;margin-top:45px;&#x22;&#x3E;HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets. &#x3C;/p&#x3E;</code></pre>
+
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>추가한 내용은 다음과 같습니다.</p>
+
+        <pre class="brush: html">
+&lt;img src=&quot;./web_img/7648.png&quot;&gt;</pre>
+
+        <p>&nbsp;</p>
+
+        <p>위의 코드에서<br/>
+            src가 바로 속성입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>또 속성의 값인<br/>
+            아래 주소는<br/>
+            이미지의 주소입니다.<br/>
+            <a href="./web_img/7648.png"
+               target="_blank">./web_img/7648.png</a>
+        </p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>src라는 속성을 통해서<br/>
+            이미지를 불러올 수 있게 된 것입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>위의 이미지는 인터넷에 있는 이미지입니다.<br/>
+            내 컴퓨터에 이미지가 없어도 표시할 수 있습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p><br/>
+            그럼<br/>
+            내 컴퓨터에 있는<br/>
+            이미지를 표시하고 싶다면<br/>
+            어떻게 해야할까요?</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>우선 이미지 파일을 구해야겠죠?<br/>
+            웹브라우저에서 원하는 이미지를 찾은 다음에<br/>
+            이미지 위에서 오른쪽 클릭을 해서<br/>
+            원하는 위치에 이미지를 저장하시면 됩니다.<br/>
+            <img alt="" height="404"
+                 src="./web_img/7649.png"
+                 width="518"/></p>
+
+        <p>또는 아래와 같이 검색하시면<br/>
+            저작권에 구속받지 않고<br/>
+            자유롭게 사용할 수 있는<br/>
+            이미지를 구할 수 있는<br/>
+            여러 서비스가 있습니다.</p>
+
+        <p style="border: 2px solid #515151;
+padding: 0.3rem;
+    padding-left: 0.3rem;
+color: #515151;
+border-radius: 5px;
+background-image: url('./web_img/7580.png');
+background-repeat: no-repeat;
+padding-left: 2.6rem;
+background-position: 4px 1px;">public domain image</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p><a href="http://unsplash.com" target="_blank">unsplash.com</a>도<br/>
+            그런 서비스 중의 하나입니다.<br/>
+            이 서비스를 이용해서<br/>
+            웹페이지에서 사용할 이미지를 다운받아 볼까요?</p>
+
+        <p>&nbsp;</p>
+
+        <p><br/>
+            마음에 드는 사진을 선택하고<br/>
+            Download 버튼을 누르면<br/>
+            이미지를 컴퓨터에 저장할 수 있습니다.</p>
+
+        <p><img alt="" height="158"
+                src="./web_img/7652.png" width="640"/>
+        </p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>다운로드 받은 이미지를<br/>
+            프로젝트 폴더에 위치시켜 보세요.</p>
+
+        <p><img alt="" height="280"
+                src="./web_img/7663.png" width="640"/>
+        </p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>위와 같이<br/>
+            웹페이지 파일(1.html)과<br/>
+            같은 위치에 있는 이미지 파일(coding.jpg)이라면<br/>
+            src 속성의 값으로<br/>
+            이미지 파일의 이름만 적어주시면 됩니다.<br/>
+            &lt;img src=&quot;coding.jpg&quot;&gt;</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>이미지의 크기가 원하는 것과 다르면<br/>
+            어떻게 하면 될까요?<br/>
+            검색해서 알아내시면 됩니다.</p>
+
+        <p style="border: 2px solid #515151;
+padding: 0.3rem;
+    padding-left: 0.3rem;
+color: #515151;
+border-radius: 5px;
+background-image: url('./web_img/7580.png');
+background-repeat: no-repeat;
+padding-left: 2.6rem;
+background-position: 4px 1px;">html img size attribute</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>검색결과 width라는<br/>
+            속성을 찾아낼 수 있었을 거에요.<br/>
+            width의 값으로<br/>
+            숫자나 %를 사용하면 원하는 크기로 조정할 수 있습니다.</p>
+
+        <p><a href="https://github.com/web-n/web1_html_internet/commit/1374bfc492a9928781453e281b4b87eab5abee8c"
+              target="_blank">변경사항</a>&nbsp;</p>
+
+        <pre><code class="html">&#x3C;h1&#x3E;HTML&#x3C;/h1&#x3E;
+&#x3C;p&#x3E;Hypertext Markup Language (HTML) is the standard markup language for &#x3C;strong&#x3E;creating &#x3C;u&#x3E;web&#x3C;/u&#x3E; pages&#x3C;/strong&#x3E; and web applications.Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
+&#x3C;img src=&#x22;https://s3-ap-northeast-2.amazonaws.com/opentutorials-user-file/module/3135/7648.png&#x22; width=&#x22;100%&#x22;&#x3E;
+&#x3C;/p&#x3E;&#x3C;p style=&#x22;margin-top:45px;&#x22;&#x3E;HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets. &#x3C;/p&#x3E;</code></pre>
+
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>지금까지 살펴본 바와 같이<br/>
+            속성은<br/>
+            태그의 이름만으로는 정보가 부족할 때 사용됩니다.<br/>
+            속성이라는 문법이 추가되면서<br/>
+            이제 태그는 보다 풍부한 표현력을 갖게 되었습니다.</p>
+
+        <p><img alt="" height="360"
+                src="./web_img/7661.png" width="640"/>
+        </p>
+
+        <p>축하합니다.<br/>
+            여러분은 태그의 문법을 완벽하게 마스터했습니다.<br/>
+            더 복잡한 문법은 없습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>또한 HTML에서<br/>
+            인기가 매우 높은 태그인<br/>
+            img 태그도 살펴봤습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p><img alt="" height="743"
+                src="./web_img/7659.png" width="640"/>
+        </p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p><img alt="" height="360"
+                src="./web_img/7662.png" width="640"/>
+        </p>
+
+    </div>
+</div>
+</body>
+</html>

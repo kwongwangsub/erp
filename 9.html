@@ -1,0 +1,339 @@
+<!doctype html>
+<html>
+<head>
+    <title>WEB</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="colors.js"></script>
+    <link rel="stylesheet" href="highlight/styles/railscasts.css">
+    <script src="highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+<h1><a href="index.html">WEB1</a></h1>
+<div id="grid">
+    <ol>
+        <li><a href="1.html">수업소개</a></li>
+        <li><a href="2.html">프로젝트의 동기</a></li>
+        <li><a href="3.html">기획</a></li>
+        <li><a href="4.html">코딩과 HTML</a></li>
+        <li><a href="5.html">HTML 코딩 실습 환경 준비</a></li>
+        <li><a href="6.html">기본문법 - 태그</a></li>
+        <li><a href="7.html">혁명적인 변화</a></li>
+        <li><a href="8.html">통계에 기반한 학습</a></li>
+        <li><a href="9.html">줄바꿈</a></li>
+        <li><a href="10.html">HTML이 중요한 이유</a></li>
+        <li><a href="11.html">최후의 문법 속성과 img</a></li>
+        <li><a href="12.html">부모자식과 목록</a></li>
+        <li><a href="13.html">문서의 구조와 슈퍼스타들</a></li>
+        <li><a href="14.html">태그의 제왕</a></li>
+        <li><a href="15.html">웹사이트 완성</a></li>
+        <li><a href="16.html">원시웹</a></li>
+        <li><a href="17.html">인터넷을 여는 열쇠 - 서버와 클라이언트</a></li>
+        <li><a href="18.html">웹호스팅 - github pages</a></li>
+        <li><a href="19.html">웹서버 운영하기</a></li>
+        <li><a href="19_1.html">웹서버 설치(윈도우)</a></li>
+        <li><a href="19_2.html">웹서버 설치(맥)</a></li>
+        <li><a href="19_3.html">웹서버 설치(리눅스)</a></li>
+        <li><a href="20.html">수업을 마치며 1</a></li>
+        <li><a href="21.html">수업을 마치며 2</a></li>
+        <li><a href="22.html">수업을 마치며 3</a></li>
+        <li><a href="code_power.html">부록 : 코드의 힘</a></li>
+        <li><a href="code_power_1.html">부록 : 코드의 힘 - 동영상 삽입</a></li>
+        <li><a href="code_power_2.html">부록 : 코드의 힘 - 댓글 기능 추가</a></li>
+        <li><a href="code_power_3.html">부록 : 코드의 힘 - 채팅 기능 추가</a></li>
+        <li><a href="code_power_4.html">부록 : 코드의 힘 - 방문자 분석기</a></li>
+    </ol>
+    <div id="article">
+        <input id="night_day" type="button" value="night" onclick="
+        nightDayHandler(this);
+      ">
+        <h2>줄바꿈</h2>
+        <div class="movie">
+            <video width="100%" controls>
+                <source src="./videos/9.줄바꿈(br%20vs%20p).mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p style="text-align: center;">---</p>
+
+        <p style="text-align: center;">&nbsp;</p>
+
+        <p style="text-align: center;">&nbsp;</p>
+
+        <p>이번 시간에는 인기있는 태그 두 가지를 살펴볼 거에요.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>이 두 태그는 서로 경쟁관계에 있는데요.<br/>
+            어떤 경쟁관계에 있는가를 통해서<br/>
+            정보로서 웹이라는 관점에 대해서 생각해 봅시다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>또 CSS라는<br/>
+            기술도 깜짝 출현을 합니다.<br/>
+            CSS 수업은 아니지만<br/>
+            CSS를 지배하는 혁명적인 규칙들을<br/>
+            접해보실 수 있습니다.</p>
+
+        <p><a href="https://www.instagram.com/antdrawing/" target="_blank"><img alt="" height="360"
+                                                                                src="./web_img/7636.jpeg"
+                                                                                width="640"/></a></p>
+
+        <p>예제에 내용을 추가해 보겠습니다.</p>
+
+        <pre><code class="html">&#x3C;h1&#x3E;HTML&#x3C;/h1&#x3E;
+Hypertext Markup Language (HTML) is the standard markup language for &#x3C;strong&#x3E;creating &#x3C;u&#x3E;web&#x3C;/u&#x3E; pages&#x3C;/strong&#x3E; and web applications.Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
+
+HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets. </code></pre>
+
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>위의 코드를 보시면<br/>
+            단락을 구분하기 위해서 줄바꿈을 했습니다만,<br/>
+            줄바꿈이 동작하지 않고 있습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p><br/>
+            왜냐하면 줄바꿈을 하기 위해서는<br/>
+            줄바꿈을 해주는 태그가 필요하거든요.</p>
+
+        <p>&nbsp;</p>
+
+        <p>알려드리기 전에&nbsp;<br/>
+            추천 검색어를 알려 드릴게요.<br/>
+            직접 검색해서 방법을 찾아보세요.</p>
+
+        <p>&nbsp;</p>
+
+        <p style="border: 2px solid #515151;
+padding: 0.3rem;
+    padding-left: 0.3rem;
+color: #515151;
+border-radius: 5px;
+background-image: url('./web_img/7580.png');
+background-repeat: no-repeat;
+padding-left: 2.6rem;
+background-position: 4px 1px;">html new line tag</p>
+
+        <p>&nbsp;</p>
+
+        <p>HTML에서<br/>
+            새로운 줄을 표현할 때는<br/>
+            &lt;br&gt; 태그를 쓰면 됩니다.</p>
+
+        <pre><code class="html">&#x3C;h1&#x3E;HTML&#x3C;/h1&#x3E;
+Hypertext Markup Language (HTML) is the standard markup language for &#x3C;strong&#x3E;creating &#x3C;u&#x3E;web&#x3C;/u&#x3E; pages&#x3C;/strong&#x3E; and web applications.Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.&#x3C;br&#x3E;&#x3C;br&#x3E;HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets. </code></pre>
+
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>그런데 위의 &lt;br&gt; 태그는<br/>
+            좀 특이한 면이 있습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>지금까지 배운 태그들은<br/>
+            열리는 태그와 닫히는 태그가<br/>
+            쌍으로 존재했습니다.<br/>
+            아래처럼요.<br/>
+            &lt;h1&gt;web&lt;/h1&gt;</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>br 태그는 닫지 않고 있습니다.<br/>
+            HTML의 여러 태그 중에<br/>
+            무엇인가를 설명하지 않는 태그들은<br/>
+            감싸야하는 컨텐츠가 없기 때문에<br/>
+            태그를 닫지 않는다는 규칙이 있습니다.<br/>
+            img, input, br, hr, meta 등이<br/>
+            닫지 않는 태그의 사례입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>다시 이야기로 돌아오겠습니다.<br/>
+            우리가 줄바꿈을 한 이유는<br/>
+            단락을 표현하기 위해서입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>HTML을 만든 사람들은<br/>
+            단락을 표현할 때 쓸 수 있는 태그를 마련해 두었습니다.<br/>
+            그럼 우리는 그 태그를 사용해야 합니다.<br/>
+            단락(paragraph)를 표현하는 태그를 검색해 보고<br/>
+            직접 적용을 해 보세요.</p>
+
+        <p>&nbsp;</p>
+
+        <p style="border: 2px solid #515151;
+padding: 0.3rem;
+    padding-left: 0.3rem;
+color: #515151;
+border-radius: 5px;
+background-image: url('./web_img/7580.png');
+background-repeat: no-repeat;
+padding-left: 2.6rem;
+background-position: 4px 1px;">html paragraph tag</p>
+
+        <p>&nbsp;</p>
+
+        <p>검색 결과 p 태그를 찾을 수 있었을 것입니다.<br/>
+            p 태그는 br 태그와 다르게<br/>
+            하나의 단락을 그룹핑할 수 있도록<br/>
+            열고, 닫는 태그가 존재합니다.<br/>
+            아래와 같이 코드를 변경해 봅시다.</p>
+
+        <pre><code class="html">&#x3C;h1&#x3E;HTML&#x3C;/h1&#x3E;
+&#x3C;p&#x3E;Hypertext Markup Language (HTML) is the standard markup language for &#x3C;strong&#x3E;creating &#x3C;u&#x3E;web&#x3C;/u&#x3E; pages&#x3C;/strong&#x3E; and web applications.Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.&#x3C;/p&#x3E;&#x3C;p&#x3E;HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets. &#x3C;/p&#x3E;</code></pre>
+
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>결과는 거의 같습니다.<br/>
+            하지만 사용된 태그는 다릅니다.<br/>
+            어떤 태그를 사용해야 할까요?</p>
+
+        <p>&nbsp;</p>
+
+        <p><br/>
+            단락을 표현할 때는<br/>
+            줄바꿈 태그 보다는<br/>
+            단락을 표현하는 태그인<br/>
+            p 태그가 더 좋은 선택입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>그 이유는<br/>
+            단락에 단락 태그를 사용하는 것이<br/>
+            웹페이지를 정보로서 보다 가치있게 해 주기 때문입니다.<br/>
+            br 태그는 줄바꿈을 의미할 뿐입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>그런데 p 태그는 단점이 있습니다.<br/>
+            단락과 단락의 간격이 고정되어 있기 때문에<br/>
+            시각적으로 자유도가 떨어집니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>반면에 br 태그는 쓰는만큼 줄바꿈이 되기 때문에<br/>
+            원하는 만큼 간격을 줄 수 있는 장점이 있습니다.<br/>
+            그래서 많은 사람들이 br 태그를 선호합니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>하지만 웹에는 CSS라는 기술이 있습니다.<br/>
+            CSS를 이용하면 p태그의 한계를 극복할 수 있습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>CSS는 HTML과 완전히 다른 문법을 가진 언어입니다.<br/>
+            HTML이 정보를 표현한다면,<br/>
+            CSS는 정보를 꾸며줍니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>CSS를 이용해서<br/>
+            첫번째 단락과 두번째 단락의 간격을<br/>
+            세밀하게 조정해 봅시다.</p>
+
+        <p><a href="https://github.com/web-n/web1_html_internet/commit/2bc6da53806ab08fc8bd3935e338bd86ce6ceef2"
+              target="_blank">변경사항</a></p>
+
+        <pre><code class="html">&#x3C;h1&#x3E;HTML&#x3C;/h1&#x3E;
+&#x3C;p&#x3E;Hypertext Markup Language (HTML) is the standard markup language for &#x3C;strong&#x3E;creating &#x3C;u&#x3E;web&#x3C;/u&#x3E; pages&#x3C;/strong&#x3E; and web applications.Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.&#x3C;/p&#x3E;&#x3C;p style=&#x22;margin-top:45px;&#x22;&#x3E;HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets. &#x3C;/p&#x3E;</code></pre>
+
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <pre class="brush: html">
+&lt;p style=&quot;margin-top:45px;&quot;&gt;</pre>
+
+        <p>위와 같이 p 태그에<br/>
+            style=&quot;margin-top:45px&quot;를 추가하면<br/>
+            p 태그의 위쪽에 45px 만큼의 여백(margin)이 생깁니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>이것이 바로 CSS입니다.<br/>
+            CSS는 우리 수업의 주제가 아니기 때문에<br/>
+            이해하지 못하셔도 됩니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p><br/>
+            중요한 것은<br/>
+            &lt;br&gt; 보다 &lt;p&gt;가 좋은 이유를 이해하는 것입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>p 태그를 통해서 단락의 경계를 분명히 하면서<br/>
+            CSS를 통해서 p 태그의 디자인을 자유롭게 변경할 수 있기 때문에<br/>
+            br 태그 보다 p 태그가 더 좋은 선택입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p><br/>
+            다음 수업인 <a href="https://opentutorials.org/module/3135/18488" target="_blank">HTML이 중요한 이유</a>에서<br/>
+            보다 분명하게 그 이유를 이해할 수 있을 것입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>이렇게 해서<br/>
+            81%의 빈도수를 가진 p 태그와<br/>
+            70%의 빈도수를 가진 br 태그를 살펴봤습니다.</p>
+
+        <p><img alt="" height="612"
+                src="./web_img/7635.png" width="640"/>
+        </p>
+
+    </div>
+</div>
+</body>
+</html>

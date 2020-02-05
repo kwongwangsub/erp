@@ -1,0 +1,280 @@
+<!doctype html>
+<html>
+<head>
+    <title>WEB</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="colors.js"></script>
+    <link rel="stylesheet" href="highlight/styles/railscasts.css">
+    <script src="highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+<h1><a href="index.html">WEB1</a></h1>
+<div id="grid">
+    <ol>
+        <li><a href="1.html">수업소개</a></li>
+        <li><a href="2.html">프로젝트의 동기</a></li>
+        <li><a href="3.html">기획</a></li>
+        <li><a href="4.html">코딩과 HTML</a></li>
+        <li><a href="5.html">HTML 코딩 실습 환경 준비</a></li>
+        <li><a href="6.html">기본문법 - 태그</a></li>
+        <li><a href="7.html">혁명적인 변화</a></li>
+        <li><a href="8.html">통계에 기반한 학습</a></li>
+        <li><a href="9.html">줄바꿈</a></li>
+        <li><a href="10.html">HTML이 중요한 이유</a></li>
+        <li><a href="11.html">최후의 문법 속성과 img</a></li>
+        <li><a href="12.html">부모자식과 목록</a></li>
+        <li><a href="13.html">문서의 구조와 슈퍼스타들</a></li>
+        <li><a href="14.html">태그의 제왕</a></li>
+        <li><a href="15.html">웹사이트 완성</a></li>
+        <li><a href="16.html">원시웹</a></li>
+        <li><a href="17.html">인터넷을 여는 열쇠 - 서버와 클라이언트</a></li>
+        <li><a href="18.html">웹호스팅 - github pages</a></li>
+        <li><a href="19.html">웹서버 운영하기</a></li>
+        <li><a href="19_1.html">웹서버 설치(윈도우)</a></li>
+        <li><a href="19_2.html">웹서버 설치(맥)</a></li>
+        <li><a href="19_3.html">웹서버 설치(리눅스)</a></li>
+        <li><a href="20.html">수업을 마치며 1</a></li>
+        <li><a href="21.html">수업을 마치며 2</a></li>
+        <li><a href="22.html">수업을 마치며 3</a></li>
+        <li><a href="code_power.html">부록 : 코드의 힘</a></li>
+        <li><a href="code_power_1.html">부록 : 코드의 힘 - 동영상 삽입</a></li>
+        <li><a href="code_power_2.html">부록 : 코드의 힘 - 댓글 기능 추가</a></li>
+        <li><a href="code_power_3.html">부록 : 코드의 힘 - 채팅 기능 추가</a></li>
+        <li><a href="code_power_4.html">부록 : 코드의 힘 - 방문자 분석기</a></li>
+    </ol>
+    <div id="article">
+        <input id="night_day" type="button" value="night" onclick="
+        nightDayHandler(this);
+      ">
+        <h2>코딩과 HTML</h2>
+        <div class="movie">
+            <video width="100%" controls>
+                <source src="./videos/4.코딩과%20HTML.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p style="text-align: center;">---</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>기획을 끝냈으니까<br/>
+            이제 구현을 할 차례입니다.</p>
+
+        <p><a href="http://degal903.blog.me" target="_blank"><img alt="" height="360" src="./web_img/7548.png"
+                                                                  width="640"/></a></p>
+
+        <p>구현하기에 앞서서<br/>
+            타임머신을 타고 미래로 날아가서<br/>
+            우리가 어떤 일을 하게 될지 보고 옵시다.</p>
+
+        <p><img alt="" height="360" src="./web_img/7550.png" width="640"/></p>
+
+        <p><span style="font-size: 13.2px;">화면이 두 개로 쪼개져 있습니다.&nbsp;</span>집중해서 봐야 할 부분은 어떤 쪽이 사람이 하는 일이고, 어떤 쪽이 기계가 하는
+            일인가를 분리해서 생각해보는 것입니다. 또 어떤 것이 원인이고, 어떤 것이 결과인지를 추론해보는 것입니다. 이것은 이해하는 것은 우리 수업 전체를 통틀어서 가장 중요한 부분입니다.</p>
+
+        <div class="movie">
+            <video width="100%" controls>
+                <source src="./videos/html.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <p>어떤가요? 구분이 가시나요? 오른쪽이 사람이 하는 일이면서 원인이고, 그것에 대한 결과가 왼쪽이면서 기계가 하는 일이죠.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>사람이 하는 일<br/>
+            다시 말해서<br/>
+            원인을 부르는 여러 표현이 있습니다.<br/>
+            부호 또는 신호라는 의미의 <u><strong>코드 (code)</strong></u>,<br/>
+            원천이라는 뜻의 소스 (<u><strong>Source)</strong></u>,<br/>
+            약속이라는 의미에서 언어<br/>
+            그 중에서 <u><strong>컴퓨터 언어</strong></u>라고 합니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>기계가 하는 일<br/>
+            다시 말해서 결과를 부르는 여러 표현이 있습니다.</p>
+
+        <ul>
+            <li>애플리케이션</li>
+            <li>(줄여서) 앱,</li>
+            <li>(한국어로) 응용 프로그램,</li>
+            <li>프로그램</li>
+        </ul>
+
+        <p>웹에서는 결과를&nbsp;<u><strong>웹 페이지</strong></u>,<br/>
+            웹페이지가 모여있으면 <u><strong>웹사이트</strong></u>라고 합니다.<br/>
+            기능이 좀 많으면 웹애플리케이션이라고 합니다.&nbsp;<br/>
+            줄여서 웹앱이라고도 하죠.&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>즉, 원인인 코드를 통해서 결과를 만든다는 것이<br/>
+            코딩을 이해하는 핵심입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p><span style="color: rgb(102, 102, 102); font-family: NanumGothic, sans-serif; font-size: 13.2px;">세상에는 다양한 종류의 코드들이 있습니다.</span><br
+                style="color: rgb(102, 102, 102); font-family: NanumGothic, sans-serif; font-size: 13.2px;"/>
+            <span style="color: rgb(102, 102, 102); font-family: NanumGothic, sans-serif; font-size: 13.2px;">C, C++, Java, JavaScript, Python, PHP, SQL...</span><br/>
+            코드마다 역할이 다릅니다.&nbsp;<br/>
+            하고자 하는 일에 따라서<br/>
+            적당한 코드를 선택해야 합니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>그중에 웹페이지를 만드는 코드는 무엇이냐면<br/>
+            HTML입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p><img alt="" height="360" src="./web_img/7551.png" style="font-size: 13.2px;" width="640"/></p>
+
+        <p>&nbsp;</p>
+
+        <p>HTML은 두가지 면에서 중요합니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p><br/>
+            하나는 쉽습니다.<br/>
+            앞으로 여러분이 배울 어떤 컴퓨터 언어도<br/>
+            HTML 보다 훨씬 어려울 것이라고 장담합니다.<br/>
+            이 언어의 문법을 완전히 다 배우는데<br/>
+            10분도 걸리지 않습니다.</p>
+
+        <p><img alt="" height="360" src="./web_img/7552.png" width="640"/></p>
+
+        <p>다른 하나는 중요합니다.<br/>
+            하루에 100번 이상 하는 일이 있다면<br/>
+            그 일은 중요한 일일까요? 아닐까요?<br/>
+            중요한 일입니다.<br/>
+            웹페이지를 하루에 100번 이상 보지 않나요?</p>
+
+        <p>&nbsp;</p>
+
+        <p><br/>
+            인류가 생산하는<br/>
+            거의 모든 디지털 정보가 담기는 그릇이<br/>
+            바로 웹페이지입니다.<br/>
+            웹페이지가 없다면&nbsp;<br/>
+            그 많은 정보가 다 어디로 가야 할까요?</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>또 웹페이지가 없다면&nbsp;<br/>
+            검색엔진도 존재하지 않습니다.&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p><br/>
+            이 웹페이지를 만드는<br/>
+            컴퓨터 언어가 HTML입니다.</p>
+
+        <p><img alt="" height="360" src="./web_img/7553.png" width="640"/></p>
+
+        <p>즉<br/>
+            HTML은&nbsp;<br/>
+            쉬우면서,<br/>
+            중요합니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>첫 번째 코딩공부의 대상으로<br/>
+            이보다 좋은 언어가 또 있을까요?</p>
+
+        <p>&nbsp;</p>
+
+        <p>제가 웹을 좋아하는<br/>
+            또 하나의 이유</p>
+
+        <p>&nbsp;</p>
+
+        <p><u><strong>퍼블릭 도메인(Public Domain)</strong></u></p>
+
+        <p>&nbsp;</p>
+
+        <p><br/>
+            저작권이 없는 것들을<br/>
+            퍼블릭 도메인이라고 합니다.&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p><br/>
+            한글을 사용할 때<br/>
+            세종대왕이나 그 유족들에게<br/>
+            라이센스 비용을 지급하나요?<br/>
+            안 합니다.&nbsp;<br/>
+            그것은 한글이 Public Domain이기 때문입니다.</p>
+
+        <p><a href="http://www.limjisu.com" target="_blank"><img alt="" height="360" src="./web_img/7554.png"
+                                                                 style="font-size: 13.2px;" width="640"/></a></p>
+
+        <p>웹 또한 마찬가지입니다.<br/>
+            웹을 만든 팀 버너스 리는<br/>
+            웹을 어떠한 저작권도 존재하지 않는<br/>
+            완전한 자유를 의미하는 퍼블릭 도메인으로 선언했습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p><br/>
+            그렇기 때문에<br/>
+            구글과<br/>
+            마이크로소프트와<br/>
+            애플과<br/>
+            모질라와<br/>
+            네이버가<br/>
+            웹브라우저를 만들 수 있고,<br/>
+            우리는 똑같은 웹페이지를<br/>
+            여러 웹브라우저에서 볼 수 있는 것입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>이런 말이 있습니다.<br/>
+            빨리 가려면 혼자 가고,<br/>
+            오래 가려면 같이 가라.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>웹은 특정 기업이 독점하는 기술만큼<br/>
+            빨리 발전하지는 못했지만,<br/>
+            웹은 특정 기업이 독점하지 않기 때문에<br/>
+            1990년 이후로<br/>
+            27년이 지난 지금 2017년까지 살아남았고,<br/>
+            27년 뒤에도 살아남을 가능성이 매우 높습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>웹의 세계에 오신 것을 환영합니다.</p>
+
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,285 @@
+<!doctype html>
+<html>
+<head>
+    <title>WEB</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="colors.js"></script>
+    <link rel="stylesheet" href="highlight/styles/railscasts.css">
+    <script src="highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+<h1><a href="index.html">WEB1</a></h1>
+<div id="grid">
+    <ol>
+        <li><a href="1.html">수업소개</a></li>
+        <li><a href="2.html">프로젝트의 동기</a></li>
+        <li><a href="3.html">기획</a></li>
+        <li><a href="4.html">코딩과 HTML</a></li>
+        <li><a href="5.html">HTML 코딩 실습 환경 준비</a></li>
+        <li><a href="6.html">기본문법 - 태그</a></li>
+        <li><a href="7.html">혁명적인 변화</a></li>
+        <li><a href="8.html">통계에 기반한 학습</a></li>
+        <li><a href="9.html">줄바꿈</a></li>
+        <li><a href="10.html">HTML이 중요한 이유</a></li>
+        <li><a href="11.html">최후의 문법 속성과 img</a></li>
+        <li><a href="12.html">부모자식과 목록</a></li>
+        <li><a href="13.html">문서의 구조와 슈퍼스타들</a></li>
+        <li><a href="14.html">태그의 제왕</a></li>
+        <li><a href="15.html">웹사이트 완성</a></li>
+        <li><a href="16.html">원시웹</a></li>
+        <li><a href="17.html">인터넷을 여는 열쇠 - 서버와 클라이언트</a></li>
+        <li><a href="18.html">웹호스팅 - github pages</a></li>
+        <li><a href="19.html">웹서버 운영하기</a></li>
+        <li><a href="19_1.html">웹서버 설치(윈도우)</a></li>
+        <li><a href="19_2.html">웹서버 설치(맥)</a></li>
+        <li><a href="19_3.html">웹서버 설치(리눅스)</a></li>
+        <li><a href="20.html">수업을 마치며 1</a></li>
+        <li><a href="21.html">수업을 마치며 2</a></li>
+        <li><a href="22.html">수업을 마치며 3</a></li>
+        <li><a href="code_power.html">부록 : 코드의 힘</a></li>
+        <li><a href="code_power_1.html">부록 : 코드의 힘 - 동영상 삽입</a></li>
+        <li><a href="code_power_2.html">부록 : 코드의 힘 - 댓글 기능 추가</a></li>
+        <li><a href="code_power_3.html">부록 : 코드의 힘 - 채팅 기능 추가</a></li>
+        <li><a href="code_power_4.html">부록 : 코드의 힘 - 방문자 분석기</a></li>
+    </ol>
+    <div id="article">
+        <input id="night_day" type="button" value="night" onclick="
+        nightDayHandler(this);
+      ">
+        <h2>HTML 코딩 실습 환경 준비</h2>
+        <div class="movie">
+            <video width="100%" controls>
+                <source src="./videos/5.HTML코딩실습환경준비.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p style="text-align: center;">---</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>기획이 끝났으니&nbsp;<br/>
+            이제는 코딩하기 위한&nbsp;<br/>
+            준비를 해보겠습니다.&nbsp;</p>
+
+        <p><img alt="" height="360"
+                src="./web_img/7573.png" width="640"/>
+        </p>
+
+        <p>코딩을 하기 위해서는<br/>
+            에디터(Editor)라는 프로그램이 필요합니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>각자의 운영체제에는<br/>
+            이미 에디터가 준비 되어 있습니다.</p>
+
+        <ul>
+            <li>윈도 - 메모장</li>
+            <li>맥 - 텍스트 편집기</li>
+            <li>리눅스 - gedit, nano, vim</li>
+        </ul>
+
+        <p><a href="http://degal903.blog.me" target="_blank"><img alt="" height="360"
+                                                                  src="./web_img/7574.png"
+                                                                  width="640"/></a></p>
+
+        <p>에디터마다 사용법이 다르기 때문에<br/>
+            통일하겠습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>이 수업에서 채택한 에디터는<br/>
+            github.com에서 만든<br/>
+            Atom(아톰)입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>미래에는 Atom이 없어졌을 수도 있고,<br/>
+            더 좋은 에디터가 나왔을 수도 있겠죠.<br/>
+            중요한 것은 Atom의 사용법이 아니고<br/>
+            자신이 필요한 에디터를 찾아내는 능력입니다.<br/>
+            아래와 같은 검색어를 이용해서<br/>
+            자기에게 맞는 도구를 찾을 수 있습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p style="border: 2px solid #515151;
+padding: 0.3rem;
+    padding-left: 0.3rem;
+color: #515151;
+border-radius: 5px;
+background-image: url('./web_img/7580.png');
+background-repeat: no-repeat;
+padding-left: 2.6rem;
+background-position: 4px 1px;">html editor</p>
+
+        <p>&nbsp;</p>
+
+        <p>아래 주소에서 프로그램을 다운로드해서 설치해주세요.<br/>
+            <a href="https://atom.io/" target="_blank">https://atom.io/</a></p>
+
+        <p>&nbsp;</p>
+
+        <p style="text-align:center"><img alt="" height="225"
+                                          src="./web_img/7575.png"
+                                          width="400"/></p>
+
+        <p>&nbsp;</p>
+
+        <p>왼쪽은 프로젝트에서 파일목록입니다. 오른쪽은 선택한 파일을 편집하는 화면입니다.</p>
+
+        <p><img alt="" height="357"
+                src="./web_img/7576.png" width="640"/>
+        </p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>저는 편하게 작업하기 위해서 왼쪽에는 웹브라우저를 오른쪽에는 Atom을 배치했습니다.</p>
+
+        <p><img alt="" height="360"
+                src="./web_img/7578.png" width="640"/>
+        </p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>먼저 할 것은<br/>
+            실습 파일을 저장할 폴더를 생성하는 것입니다.<br/>
+            이 폴더를 프로젝트 폴더라고 하겠습니다.<br/>
+            윈도우 탐색기를 이용해서<br/>
+            바탕화면에 WEB이라는 디렉터리를 생성해주세요.<br/>
+            <a href="http://youtu.be/iRZJHhjh8DU?t=207" target="_blank">(동영상참고 : youtu.be/iRZJHhjh8DU?t=207)</a></p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>이제 프로젝트 폴더가 아톰 왼쪽에 표시되게 해볼께요. 메뉴 &rarr; File &rarr; Add project folder를 선택해서 바탕화면에 생성한 WEB 폴더를
+            선택해주세요.&nbsp;<a href="https://youtu.be/iRZJHhjh8DU?t=281" target="_blank">(동영상참고 : </a><a
+                    href="http://(동영상참고:https://youtu.be/iRZJHhjh8DU?t=281)">https://youtu.be/iRZJHhjh8DU?t=281</a><a
+                    href="https://youtu.be/iRZJHhjh8DU?t=281" target="_blank">)</a><br/>
+            <img alt="" height="202"
+                 src="./web_img/7583.png"
+                 width="400"/></p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>1.html 파일을 생성하겠습니다. WEB 폴더에서&nbsp;오른쪽 클릭해서 New File을 선택합니다.&nbsp;<a href="https://youtu.be/iRZJHhjh8DU?t=348"
+                                                                               target="_blank">(동영상참고 :
+            https://youtu.be/iRZJHhjh8DU?t=348)</a></p>
+
+        <p><img alt="" height="191"
+                src="./web_img/7584.png" width="400"/>
+        </p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>방금 생성한 파일이름을 보면&nbsp;<br/>
+            확장자가 html 입니다.<br/>
+            MS 워드의 확장자는doc,<br/>
+            PDF는 pdf입니다.<br/>
+            웹브라우저에서 볼 수 있는 웹페이지는<br/>
+            확장자가 html 입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>그럼 1.html을 웹브라우저로 열어봅시다. 웹브라우저에서 아래와 같은 단축키를 눌러보세요.</p>
+
+        <ul>
+            <li>윈도우 : Ctrl + O(알파벳)</li>
+            <li>맥 : Cmd + O(알파벳)</li>
+        </ul>
+
+        <p>파일선택 화면이 나올꺼예요.</p>
+
+        <p><img alt="" height="388"
+                src="./web_img/7592.png" width="640"/>
+        </p>
+
+        <p>파일선택 화면이 나오지 않으면 브라우저를 바꿔보세요. 또는 윈도우 탐색기나 맥 파인더에서 1.html 파일을 더블클릭하면 웹브라우저가 실행되면서 웹페이지가 표시 될꺼예요.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>짜잔 이렇게하면&nbsp;<br/>
+            웹브라우저로 웹페이지를&nbsp;<br/>
+            열 수 있습니다.&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>이제 화면에 무엇인가를 표시해봅시다. 편집화면에 hello web이라고 입력하고 저장해보세요. (윈도우 : Ctrl + S, 맥 : Cmd + S)&nbsp;<a
+                href="https://youtu.be/iRZJHhjh8DU?t=553" target="_blank">(동영상참고 :
+            https://youtu.be/iRZJHhjh8DU?t=553)</a></p>
+
+        <p><img alt="" height="176"
+                src="./web_img/7588.png" width="446"/>
+        </p>
+
+        <p>&nbsp;</p>
+
+        <p><br/>
+            웹브라우저를 리로드 하면 아래처럼 hello web이 출력됩니다.</p>
+
+        <p><img alt="" height="176"
+                src="./web_img/7590.png" width="352"/><br/>
+            &nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>축하합니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p><br/>
+            지금까지 웹페이지에 대한 소비자로만 살아오셨다면<br/>
+            이제 생산자로서 첫발을 뗀 것입니다.<br/>
+            신기하고 기쁘지 않나요?<br/>
+            더욱 흥미로운 것들이 기다리고 있습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <h2>자주 묻는 질문</h2>
+
+        <h3>atom 설치가 되지 않습니다.&nbsp;</h3>
+
+        <p>atom을 꼭 써야하는 것은 전혀 아닙니다.&nbsp;&nbsp;더 좋은 대체재들은 얼마든지 있습니다. <a
+                href="https://opentutorials.org/course/2418/13455" target="_blank">brackets</a>를 추천드립니다.&nbsp;</p>
+
+        <h3>자동 줄바꿈을 하고 싶습니다.</h3>
+
+        <p>메뉴에서 preference -&gt; editor -&gt; Soft Wrap 항목을 체크해주세요. <a
+                href="https://www.youtube.com/watch?v=-8G0qxzWCsk&amp;feature=youtu.be" target="_blank">참고</a></p>
+
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,800 @@
+<!doctype html>
+<html>
+<head>
+    <title>WEB</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="colors.js"></script>
+    <link rel="stylesheet" href="highlight/styles/railscasts.css">
+    <script src="highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+<h1><a href="index.html">WEB1</a></h1>
+<div id="grid">
+    <ol>
+        <li><a href="1.html">수업소개</a></li>
+        <li><a href="2.html">프로젝트의 동기</a></li>
+        <li><a href="3.html">기획</a></li>
+        <li><a href="4.html">코딩과 HTML</a></li>
+        <li><a href="5.html">HTML 코딩 실습 환경 준비</a></li>
+        <li><a href="6.html">기본문법 - 태그</a></li>
+        <li><a href="7.html">혁명적인 변화</a></li>
+        <li><a href="8.html">통계에 기반한 학습</a></li>
+        <li><a href="9.html">줄바꿈</a></li>
+        <li><a href="10.html">HTML이 중요한 이유</a></li>
+        <li><a href="11.html">최후의 문법 속성과 img</a></li>
+        <li><a href="12.html">부모자식과 목록</a></li>
+        <li><a href="13.html">문서의 구조와 슈퍼스타들</a></li>
+        <li><a href="14.html">태그의 제왕</a></li>
+        <li><a href="15.html">웹사이트 완성</a></li>
+        <li><a href="16.html">원시웹</a></li>
+        <li><a href="17.html">인터넷을 여는 열쇠 - 서버와 클라이언트</a></li>
+        <li><a href="18.html">웹호스팅 - github pages</a></li>
+        <li><a href="19.html">웹서버 운영하기</a></li>
+        <li><a href="19_1.html">웹서버 설치(윈도우)</a></li>
+        <li><a href="19_2.html">웹서버 설치(맥)</a></li>
+        <li><a href="19_3.html">웹서버 설치(리눅스)</a></li>
+        <li><a href="20.html">수업을 마치며 1</a></li>
+        <li><a href="21.html">수업을 마치며 2</a></li>
+        <li><a href="22.html">수업을 마치며 3</a></li>
+        <li><a href="code_power.html">부록 : 코드의 힘</a></li>
+        <li><a href="code_power_1.html">부록 : 코드의 힘 - 동영상 삽입</a></li>
+        <li><a href="code_power_2.html">부록 : 코드의 힘 - 댓글 기능 추가</a></li>
+        <li><a href="code_power_3.html">부록 : 코드의 힘 - 채팅 기능 추가</a></li>
+        <li><a href="code_power_4.html">부록 : 코드의 힘 - 방문자 분석기</a></li>
+    </ol>
+    <div id="article">
+        <input id="night_day" type="button" value="night" onclick="
+        nightDayHandler(this);
+      ">
+        <h2>원시웹</h2>
+
+        <div class="movie">
+            <video width="100%" controls>
+                <source src="./videos/16.원시웹.mp4" type="video/mp4">
+            </video>
+        </div>
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p style="text-align: center;">---</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>우리 수업은<br/>
+            두 개의 산으로 이루어져 있습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>하나의 산은<br/>
+            웹페이지를 만드는 것입니다.<br/>
+            여러분은 방금 이 산을 멋지게 넘었습니다.</p>
+
+        <p><img alt="" height="360" src="./web_img/7711.jpeg" width="640"/></p>
+
+        <p>또 하나는<br/>
+            내가 만든 웹페이지를<br/>
+            인터넷을 통해서<br/>
+            누구나 가져갈 수 있게 하는 것입니다.</p>
+
+        <p><img alt="" height="360" src="./web_img/7712.jpeg" width="640"/></p>
+
+        <p>지금까지 여정에 대한 휴식이면서<br/>
+            앞으로 가야할 여정에 대한 준비를 위한<br/>
+            시간을 마련했습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p><br/>
+            바로<br/>
+            웹의 역사<br/>
+            입니다.</p>
+
+        <p><img alt="" height="360" src="./web_img/7713.jpeg" width="640"/></p>
+
+        <p>이 수업은 2017년에 만들어졌습니다.<br/>
+            웹이 시작된 1990년 이후로 27년간<br/>
+            웹은 가장 중요한 정보기술로 군림하면서<br/>
+            복잡해졌어요.</p>
+
+        <p><img alt="" height="360" src="./web_img/7714.jpeg" width="640"/></p>
+
+        <p>그 결과<br/>
+            웹을 처음 공부하는 분들은<br/>
+            전체가 보이지 않습니다.<br/>
+            지도 없이 공부하는 기분이 들 거에요.</p>
+
+        <p><img alt="" height="360" src="./web_img/7715.jpeg" width="640"/></p>
+
+        <p>어떻게 하면<br/>
+            이 막막함을 낮춰드릴 수 있을까를 고민했고,<br/>
+            필자가 세운 가설이 있습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>웹의 역사를 거슬러 올라가서<br/>
+            웹이 세상에 처음 등장한 시기에 도착한다면<br/>
+            거기에 웹의 본질이 있을 것 같았어요.</p>
+
+        <p><img alt="" height="360" src="./web_img/7716.jpeg" width="640"/></p>
+
+        <p>역사를 통해서 만난 웹의 본질은<br/>
+            웹이 웹이기 위해서 필요한 것은 빠짐없이 있으면서,<br/>
+            군더더기는 없는 상태였습니다.</p>
+
+        <p><a href="https://www.instagram.com/zzzbird539/" target="_blank"><img alt="" height="360"
+                                                                                src="./web_img/7717.jpeg" width="640"/></a>
+        </p>
+
+        <p>지금부터 우리는<br/>
+            인터넷과 웹이<br/>
+            어떻게 세상에 등장했는가를 살펴보면서<br/>
+            정보기술을 바라보는<br/>
+            관전 포인트를 넓혀 볼 것입니다.</p>
+
+        <p><img alt="" height="360" src="./web_img/7718.jpeg" width="640"/></p>
+
+        <p>우리가 단순히 지식에 대한 소비자로 살 것이라면<br/>
+            이런 이야기는 필요하지 않을 거에요.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>하지만 우리도<br/>
+            컴퓨터,<br/>
+            인터넷,<br/>
+            웹과 같이<br/>
+            혁명적인 것을 만들어야죠.</p>
+
+        <p><img alt="" height="360" src="./web_img/7719.jpeg" width="640"/><br/>
+            그러기 위해서는<br/>
+            이 혁명이<br/>
+            어떻게<br/>
+            시작되고,<br/>
+            지속되고,<br/>
+            소멸되는가에 대한 맥락을<br/>
+            자세히 들여다볼 필요가 있다고 생각합니다.</p>
+
+        <p><a href="https://www.instagram.com/sayhelloanbu/" target="_blank"><img alt="" height="360"
+                                                                                  src="./web_img/7745.jpeg"
+                                                                                  width="640"/></a></p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p style="text-align: center;">질문입니다</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>인터넷과 웹은<br/>
+            같을까요?<br/>
+            다를까요?</p>
+
+        <p><img alt="" height="225" src="./web_img/7720.png" width="640"/></p>
+
+        <p>이렇게 물어보면<br/>
+            우리는 시험을 많이 봤기 때문에<br/>
+            다르겠지?라고 생각하겠죠? ㅎㅎ</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>실제로 이 두 가지를<br/>
+            현실에서 구분해서<br/>
+            맥락적으로 사용하는 분이 계실까요?<br/>
+            많지 않을 거에요.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>어떻게 다른지를<br/>
+            비유적으로 이야기해 보겠습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>인터넷이 도시라면<br/>
+            웹은 도시 위에 있는 건물 하나입니다.</p>
+
+        <p><img alt="" height="360" src="./web_img/7725.jpeg" width="640"/></p>
+
+        <p>인터넷이 도로라면<br/>
+            웹은 도로 위를 달리는 자동차 한 대라고 할 수 있습니다.</p>
+
+        <p><img alt="" height="360" src="./web_img/7726.jpeg" width="640"/></p>
+
+        <p>인터넷이 운영체제라면<br/>
+            웹은 운영체제 위에서 동작하는<br/>
+            하나의 앱이라고 할 수 있습니다.</p>
+
+        <p><img alt="" height="360" src="./web_img/7727.jpeg" width="640"/></p>
+
+        <p>벤 다이어그램으로 살펴본다면<br/>
+            웹이 인터넷의&nbsp;부분집합입니다.<br/>
+            또 웹과 동급인 기술이 별처럼 많이 있습니다.<br/>
+            여러분도 웹과 동급인 기술을 개발할 수 있습니다.<br/>
+            성공할 수 있는지는 별개 문제겠지만요.</p>
+
+        <p>&nbsp;</p>
+
+        <p style="text-align:center"><img alt="" height="278" src="./web_img/7724.png" width="500"/></p>
+
+        <p>&nbsp;</p>
+
+        <p>이 관계를 역사적으로 살펴보면<br/>
+            정보기술 역사상 중요한 사건 2개가<br/>
+            1960년대와 1990년대에 있었습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>1960년은 인터넷이 탄생합니다.<br/>
+            1990년에는 웹이 시작됩니다.<br/>
+            두 기술은<br/>
+            무려 30년의 시차를 가지고<br/>
+            세상에 태어났습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>우리가 이 두 기술을 잘 구분하지 못하는 것은<br/>
+            웹이 너무나 성공했기 때문입니다.<br/>
+            또 웹 때문에 사람들이 인터넷을 쓰기 시작했기 때문입니다.<br/>
+            그만큼 웹은 중요한 기술입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>웹의 역사를 살펴보기 전에<br/>
+            인터넷에 대한 이야기를 먼저 꺼내보겠습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>1960년은<br/>
+            인류역사에서 처음이자 마지막이었던<br/>
+            핵전쟁이 끝난 지 얼마되지 않은 때 였습니다.<br/>
+            당시에 핵에 대한 공포는<br/>
+            상상을 초월하는 것이었습니다.</p>
+
+        <p><img alt="" height="360" src="./web_img/7729.jpeg" width="640"/></p>
+
+        <p>미국에서는 핵공격이 일어났을 때<br/>
+            통신시스템에 심각한 취약점이 있다는 것을 발견했습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>당시에는 통신 시스템이 중앙집중적이었기 때문에<br/>
+            핵공격을 당하면<br/>
+            통신이 마비되는 위험이 있었던 것입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>이런 문제를 극복하기 위해서<br/>
+            분산된 형태의 통신시스템을 구상하게 되는데<br/>
+            그것이 인터넷의 시작이었습니다.<br/>
+            <img alt="" height="360" src="./web_img/7730.jpeg" width="640"/></p>
+
+        <p>수많은 통신장치들이<br/>
+            각자 일종의 전화국 역할을 하는<br/>
+            상호부조 시스템이 인터넷인 것이죠.<br/>
+            인터넷은 위의 그림처럼 중앙이 없습니다.<br/>
+            하나가 파괴되도 나머지가 역할을 하게 됩니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>이렇게 1960년에 인터넷이 출발합니다.<br/>
+            그렇게 30년 동안<br/>
+            인터넷은 천천히 확산됩니다.<br/>
+            이 기간동안 일반인들은<br/>
+            인터넷이 세상에 있다는 것조차 잘 몰랐습니다.<br/>
+            대학, 군대, 기업들만 사용하는 엘리트 시스템이었거든요.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>1990년<br/>
+            획기적인 사건이 발생합니다.<br/>
+            바로 웹의 탄생입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p style="text-align: center;">질문입니다<br/>
+            웹의 고향은 어디일까요?</p>
+
+        <p style="text-align: center;">&nbsp;</p>
+
+        <p><a href="https://www.instagram.com/98deuk76/" target="_blank"><img alt="" height="360"
+                                                                              src="./web_img/7731.jpeg"
+                                                                              width="640"/></a></p>
+
+        <p>이렇게 물어보면<br/>
+            미국은 아니라는 것은 아시겠죠? ㅎㅎ<br/>
+            맞혀 보세요.<br/>
+            의외의 곳입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p><br/>
+            스위스<br/>
+            입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p><img alt="" height="360" src="./web_img/7732.png" width="640"/></p>
+
+        <p>&nbsp;</p>
+
+        <p>왜 산 좋고 물 좋은 스위스에서<br/>
+            정보기술 역사상<br/>
+            가장 중요한 사건 중의 하나로<br/>
+            평가 받고 있는 웹이 태어났을까요?</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>사실 스위스가 중요한 것은 아닙니다.<br/>
+            스위스에 무엇이 있는 지가 중요합니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>스위스에는<br/>
+            유럽입자물리 연구소(CERN)라는<br/>
+            저명한 연구소가 있습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p style="text-align:center"><img alt="" height="150" src="./web_img/7733.png" width="150"/></p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>이 연구소에는<br/>
+            강입자 가속기라는 기계가 있습니다.<br/>
+            이 기계는<br/>
+            인류가 만든 기계 중에<br/>
+            가장<br/>
+            복잡하고,<br/>
+            비싸고,<br/>
+            거대한 것입니다.<br/>
+            그 둘레가 무려<br/>
+            27km입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p><img alt="" height="480" src="./web_img/7735.jpg" width="640"/></p>
+
+        <p style="text-align: center;"><a href="https://project-hl-lhc-industry.web.cern.ch/" target="_blank">출처 :
+            https://project-hl-lhc-industry.web.cern.ch/</a></p>
+
+        <p>&nbsp;</p>
+
+        <p>과학자들은<br/>
+            이 사진에 있는 관을 통해서<br/>
+            입자를 고속으로 회전시킵니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p><img alt="" height="426" src="./web_img/7736.jpg" width="640"/></p>
+
+        <p>&nbsp;</p>
+
+        <p>그리고<br/>
+            입자와 입자를 꽝하고 충돌시키는데<br/>
+            그때 어마어마한 에너지가 생깁니다.<br/>
+            그 에너지로 인해서 어떤 물질의 존재여부를<br/>
+            확인할 수 있다는 가설을 세웠습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>그 물질이 바로<br/>
+            힉스 입자입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>피터 힉스 박사는<br/>
+            1964년<br/>
+            힉스라는 물질의 존재를 예견했습니다.<br/>
+            하지만 당시에는<br/>
+            그것을 실험적으로 증명할 수 있는 방법이 없었죠.</p>
+
+        <p>&nbsp;</p>
+
+        <p><br/>
+            이 물질이 존재하는 지를 확인하기 위해서<br/>
+            엄청난 돈과 노력을 들여서 만든 것이<br/>
+            강입자 가속기입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p><br/>
+            2013년 10월 6일<br/>
+            유럽입자물리연구소는<br/>
+            인류를 향해서 중대발표를 합니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>힉스 입자가 존재한다는 것이었습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>발표장에는 피터 힉스 박사가 있었는데<br/>
+            <a href="https://youtu.be/0CugLD9HF94?t=46" target="_blank">눈물</a>을 흘리죠.<br/>
+            피터 힉스와<br/>
+            프랑수와 앙글레르는<br/>
+            공동으로 노벨 물리학상을 받습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>인류는 그런 존재입니다.<br/>
+            호기심 때문에 이렇게 엄청난 일을 합니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>이 연구소는<br/>
+            127개국에서 모인<br/>
+            12000명의<br/>
+            과학자와 엔지니어가 모인 곳입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>이렇게 보면<br/>
+            매우 멋진 곳처럼 보이죠?</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>하지만<br/>
+            필자는<br/>
+            정반대의 측면을<br/>
+            이야기하고 싶습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>1980년대에<br/>
+            일반인들은<br/>
+            정보라는 개념 조차도 낯설어&nbsp;하던 때였습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>하지만<br/>
+            유럽입자물리연구소는<br/>
+            그 시절에 이미<br/>
+            정보의 바다에서 허우적대고 있었습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>지금 우리가 살고 있는 세상과<br/>
+            매우 비슷한<br/>
+            작은 지구였던 것입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>이런 곳에서 웹이 태어난 것은<br/>
+            자연스럽게 느껴지지 않나요?</p>
+
+        <p>&nbsp;</p>
+
+        <p><br/>
+            1980년에 연구소에 중요한 인물이 도착합니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>훗날 웹의 창시자가 될<br/>
+            팀 버너스 리입니다.</p>
+
+        <p><img alt="" height="360" src="./web_img/7737.jpeg" width="640"/></p>
+
+        <p>&nbsp;</p>
+
+        <p>그는 세계 최초의<br/>
+            컴퓨터 엔지니어 그룹에 속하는<br/>
+            엄마와 아빠를 두고 있는데요.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>어렸을 때부터<br/>
+            아버지와<br/>
+            어떻게 하면 컴퓨터로<br/>
+            정보를 잘 표현할 수 있을까에 대한<br/>
+            대화를 나누곤 했습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>그는<br/>
+            대학에서 물리학을 전공했지만,<br/>
+            컴퓨터에 대한 전문성도 있었기 때문에<br/>
+            소프트웨어 엔지니어로<br/>
+            물리학 연구소에서 일을 하게 되었습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>한편<br/>
+            그는 비정규직이었기 때문에<br/>
+            연구소에 계속 머무르지는 않았습니다.<br/>
+            10년 동안<br/>
+            연구소를<br/>
+            들어갔다<br/>
+            나갔다를 반복합니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>그 때마다 그는<br/>
+            후에 웹의 전신이 될 프로그램을<br/>
+            만들고 또 만들고를 반복합니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>연구소는<br/>
+            구글이나 MS가 아니었기 때문에<br/>
+            물리학 연구가 아니었던 그의 작업은<br/>
+            공식적으로 인정받지 못했습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>1990년 연구소에 중요한 사건이 생깁니다.<br/>
+            바로 인터넷이 도입된 것입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>인터넷이 연구소에 도입되면서<br/>
+            팀버너스리는 지금까지의 경험에<br/>
+            인터넷을 합성해서<br/>
+            인류사적인 의미를 갖는 작업을<br/>
+            조용히 시작합니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>1990년 10월에<br/>
+            웹페이지를 편집하는 프로그램을 만듭니다.</p>
+
+        <p><img alt="" height="360" src="./web_img/7738.jpeg" width="640"/></p>
+
+        <p>&nbsp;</p>
+
+        <p>1990년 11월에<br/>
+            세계 최초의 웹브라우저를 만듭니다.<br/>
+            이 웹브라우저의 이름이 바로<br/>
+            월드 와이드 웹(world wide web)이었습니다.<br/>
+            훗날 이 브라우저의 이름이 웹의 이름이 되죠.</p>
+
+        <p>&nbsp;</p>
+
+        <p><img alt="" height="360" src="./web_img/7739.jpeg" width="640"/></p>
+
+        <p>1990년 12월 24일 크리스마스 이브에<br/>
+            마침내 웹서버를 완성합니다.<br/>
+            이 서버에 info.cern.ch라는<br/>
+            도메인 네임을 부여합니다.</p>
+
+        <p><img alt="" height="360" src="./web_img/7740.jpeg" width="640"/></p>
+
+        <p>자 웹브라우저를 켜세요.<br/>
+            주소창에<br/>
+            http://info.cern.ch 라고<br/>
+            입력해 보세요.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>바로 이곳이<br/>
+            세계 최초의 웹페이지입니다.<br/>
+            여기가 웹의 메소포타미아입니다.<br/>
+            소름돋지 않나요?<br/>
+            저라면 셀카를 찍어서 SNS에 올리겠습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p><img alt="" height="251" src="./web_img/7742.png" width="640"/></p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>인터넷이 등장한 1960년 이후로<br/>
+            엘리트 시스템이었던 인터넷이<br/>
+            1990년 웹을 만나면서<br/>
+            본격적인 대중화의 길을 걷기 시작합니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>오래 전부터 사람들은<br/>
+            인터넷이 미래에<br/>
+            중요하게 사용될 도구라는 것을 알았습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>하지만<br/>
+            웹이 등장하기 전까지<br/>
+            인터넷의 활약은 가능성으로 머물러 있었습니다.<br/>
+            인터넷을 제대로 응용한<br/>
+            웹이 등장하면서<br/>
+            일반인에게도<br/>
+            쓸 만한 시스템이 된 것이죠.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>그렇게<br/>
+            인터넷과 웹은<br/>
+            폭발적으로 동반성장해서<br/>
+            오늘날에 이르게 되었습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>필자는 팀 버니스리가<br/>
+            처음으로 창조한 웹의 최초의 모습을<br/>
+            이렇게 부릅니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>원시웹</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>웹이기 위해서 필요한 것을<br/>
+            모두 가지고 있으면서<br/>
+            그렇지 않은 것은 배제한<br/>
+            순수한 상태를<br/>
+            원시웹에서 찾을 수 있다고 생각했고,<br/>
+            실제로 그랬습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>WEB1은 바로 이 원시웹을 다루는 수업입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>여러분은 지금까지<br/>
+            원시상태의 웹페이지를 만드는 방법을<br/>
+            배웠습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>우리가 배운 것은<br/>
+            2017년을 중심으로<br/>
+            지난 27년 동안 중요했고,<br/>
+            앞으로 27년 후에도 중요할 본질입니다.<br/>
+            어렵지 않고,<br/>
+            바뀌지 않습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>그럼 이제 무엇을 해야 할까요?</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>내가 만든<br/>
+            웹 페이지를<br/>
+            인터넷을 통해서<br/>
+            전세계의 누구나 볼 수 있도록 해야 합니다.</p>
+
+        <p><a href="https://opentutorials.org/course/2722" target="_blank"><img alt="" height="360"
+                                                                                src="./web_img/7743.jpeg" width="640"/></a>
+        </p>
+
+        <p>이것까지 해 낸다면<br/>
+            여러분은 1990년에<br/>
+            웹을 마스터한 사람을 부르는 칭호인<br/>
+            웹 마스터가 된 것입니다.</p>
+
+        <p><a href="https://www.instagram.com/sundayspinach/" target="_blank"><img alt="" height="360"
+                                                                                   src="./web_img/7744.jpeg"
+                                                                                   width="640"/></a></p>
+
+        <p>웹마스터가 되어 봅시다!</p>
+
+    </div>
+</div>
+</body>
+</html>

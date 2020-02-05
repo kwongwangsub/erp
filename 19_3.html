@@ -1,0 +1,320 @@
+<!doctype html>
+<html>
+<head>
+    <title>WEB</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="colors.js"></script>
+    <link rel="stylesheet" href="highlight/styles/railscasts.css">
+    <script src="highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+<h1><a href="index.html">WEB1</a></h1>
+<div id="grid">
+    <ol>
+        <li><a href="1.html">수업소개</a></li>
+        <li><a href="2.html">프로젝트의 동기</a></li>
+        <li><a href="3.html">기획</a></li>
+        <li><a href="4.html">코딩과 HTML</a></li>
+        <li><a href="5.html">HTML 코딩 실습 환경 준비</a></li>
+        <li><a href="6.html">기본문법 - 태그</a></li>
+        <li><a href="7.html">혁명적인 변화</a></li>
+        <li><a href="8.html">통계에 기반한 학습</a></li>
+        <li><a href="9.html">줄바꿈</a></li>
+        <li><a href="10.html">HTML이 중요한 이유</a></li>
+        <li><a href="11.html">최후의 문법 속성과 img</a></li>
+        <li><a href="12.html">부모자식과 목록</a></li>
+        <li><a href="13.html">문서의 구조와 슈퍼스타들</a></li>
+        <li><a href="14.html">태그의 제왕</a></li>
+        <li><a href="15.html">웹사이트 완성</a></li>
+        <li><a href="16.html">원시웹</a></li>
+        <li><a href="17.html">인터넷을 여는 열쇠 - 서버와 클라이언트</a></li>
+        <li><a href="18.html">웹호스팅 - github pages</a></li>
+        <li><a href="19.html">웹서버 운영하기</a></li>
+        <li><a href="19_1.html">웹서버 설치(윈도우)</a></li>
+        <li><a href="19_2.html">웹서버 설치(맥)</a></li>
+        <li><a href="19_3.html">웹서버 설치(리눅스)</a></li>
+        <li><a href="20.html">수업을 마치며 1</a></li>
+        <li><a href="21.html">수업을 마치며 2</a></li>
+        <li><a href="22.html">수업을 마치며 3</a></li>
+        <li><a href="code_power.html">부록 : 코드의 힘</a></li>
+        <li><a href="code_power_1.html">부록 : 코드의 힘 - 동영상 삽입</a></li>
+        <li><a href="code_power_2.html">부록 : 코드의 힘 - 댓글 기능 추가</a></li>
+        <li><a href="code_power_3.html">부록 : 코드의 힘 - 채팅 기능 추가</a></li>
+        <li><a href="code_power_4.html">부록 : 코드의 힘 - 방문자 분석기</a></li>
+    </ol>
+    <div id="article">
+        <input id="night_day" type="button" value="night" onclick="
+        nightDayHandler(this);
+      ">
+        <h3>웹서버 운영 : 리눅스</h3>
+        <div class="movie">
+            <video width="100%" controls>
+                <source src="./videos/19-3.웹브라우저와%20웹서버의%20통신(리눅스).mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p style="text-align: center;">---</p>
+
+        <p>&nbsp;</p>
+
+        <h2>리눅스에 웹서버 설치</h2>
+
+        <p>&nbsp;</p>
+
+        <p>이번 시간에는<br/>
+            아파치 웹서버를<br/>
+            리눅스 컴퓨터에 설치하는 방법을<br/>
+            살펴보겠습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>리눅스는<br/>
+            명령어를 통해서<br/>
+            시스템을 제어하는 경우가 많기 때문에<br/>
+            이 수업에서는<br/>
+            여러분이<br/>
+            명령어 방식에 익숙하다고 가정하고 있습니다.<br/>
+            명령어를 모르는<br/>
+            초심자에게는 벅찬 수업일 수 있습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>리눅스 그중에서<br/>
+            우분투를 기준으로 수업을 진행합니다.<br/>
+            우분투에 리눅스를 설치하는 방법을<br/>
+            검색해서 알아내 봅시다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>검색창에 아래와 같이 입력해보세요.</p>
+
+        <p style="border: 2px solid #515151;
+padding: 0.3rem;
+    padding-left: 0.3rem;
+color: #515151;
+border-radius: 5px;
+background-image: url('./web_img/7580.png');
+background-repeat: no-repeat;
+padding-left: 2.6rem;
+background-position: 4px 1px;">apache install ubuntu</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>이렇게 생긴 페이지를 찾았어요. (<a href="https://goo.gl/w3k7LP" target="_blank">https://goo.gl/w3k7LP</a>) 이 페이지는 중요한 것이
+            아닙니다. 중요한 것은 검색 등의 방법을 통해서 여러분이 스스로 웹서버를 설치할 수 있는 능력을 갖추는&nbsp;것입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p><img alt="" height="360" src="./web_img/7989.jpeg" width="640"/></p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>페이지 중에 아래와 같은 내용이 있습니다.</p>
+
+        <pre class="brush: shell">
+sudo apt-get update
+sudo apt-get install apache2</pre>
+
+        <p>터미널에서 위의 명령을 실행하라는 말입니다.</p>
+
+        <p>sudo 는 슈퍼 관리자의 권한으로 실행하라는 의미입니다. 리눅스에서 프로그램을 설치하는 것은 일반유저의 권한으로 할 수 없습니다.</p>
+
+        <p>apt-get은 리눅스 배포판 중의 하나인 우분투에서 사용할 수 있는 일종의 앱스토어입니다. 이 프로그램을 이용해서 손쉽게 프로그램을 설치할 수 있습니다.</p>
+
+        <p>update는 설치할 수 있는 프로그램들의 목록을 최신상태로 갱신하라는 의미입니다. 프로그램을 설치하기 전엔 이 명령을 항상 실행해주세요.</p>
+
+        <p>install apache2는 apache2 를 설치하라는 의미입니다. 설치가 끝났습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>웹서버를 설치했습니다!<br/>
+            축하합니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <h2>웹서버와 HTTP</h2>
+
+        <p>웹서버를 설치했으면 웹브라우저로 접속을 해야 합니다. 우리가 하려는 일을 먼저 살펴봅시다.</p>
+
+        <p><img alt="" height="360" src="./web_img/7991.jpeg" width="640"/></p>
+
+        <p>두대의 컴퓨터가 서로 웹페이지를 주고받기 위해서 먼저 필요한 것은 웹서버가 설치된 컴퓨터의 주소입니다. 웹서버의 IP 주소를 알고 싶다면 웹서버의 콘솔에서 아래 명령을 실행합니다.</p>
+
+        <pre class="brush: html">
+hostname -I</pre>
+
+        <p><img alt="" height="66" src="./web_img/7993.jpeg" width="640"/></p>
+
+        <p>그 결과 IP 주소를 얻을 수 있는데 이 값이 그 컴퓨터의 주소입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>웹브라우저에 아래와 같이 주소를 입력합니다.</p>
+
+        <p><img alt="" height="223" src="./web_img/7996.jpeg" width="640"/></p>
+
+        <p>위와 같은 페이지가 보인다면 성공적으로 웹서버를 설치한 것입니다! 우리는 서로 다른 컴퓨터가 정보를 주고 받는 것을 구현한 것입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>그럼 index.html 파일은 서버 컴퓨터 어디에 위치하고 있는 것일까요? 그것은 웹서버의 사용설명서에 적혀있습니다. 위에 페이지를 보면 located at
+            /var/www/html/index.html 이라고 적혀있는 것 보이시죠? 저 위치가 바로 웹브라우저가 요청했을 때 웹서버가 웹페이지의 파일을 찾는 디렉터리입니다. 정말 그런지 확인해봅시다.
+            /var/www/html 디렉터리에 있는 index.html 파일의 이름을 index2.html로 바꿔봅시다.</p>
+
+        <pre class="brush: html">
+cd /var/www/html;
+mv index.html index2.html</pre>
+
+        <p>그리고 실행해보세요.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>아래와 같이 파일을 찾을 수 없다고 나옵니다. 이것으로 웹서버는 /var/www/html 디렉터리에서 요청한 파일을 찾는다는 것을 증명했습니다.</p>
+
+        <p><img alt="" height="247" src="./web_img/7997.png" width="640"/></p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>그럼 이제<br/>
+            자신의 프로젝트 파일을<br/>
+            /var/www/html 디렉토리로<br/>
+            옮겨봅시다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>예를들어서<br/>
+            저의 프로젝트 파일이<br/>
+            /home/egoing/web1 디렉토리에 있다면<br/>
+            아래와 같이 명령을 실행하면 됩니다.</p>
+
+        <pre class="brush: shell">
+cd /home/egoing/web1;
+cp -R . /var/www/html/</pre>
+
+        <p>위 명령은 우선 /home/egoing/web1 디렉토리로 이동한 후에 현재 디렉토리(.)에 있는 모든 파일과 디렉토리(-R)를 /var/www/html/ 디렉토리 아래로 복사하라는
+            의미입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>다시 웹브라우저로 접속해봅니다. 아래와 같이 나온다면 성공입니다!</p>
+
+        <p><img alt="" height="360" src="./web_img/7999.jpeg" width="640"/></p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>지금까지의 과정이<br/>
+            안될 수도 있습니다.<br/>
+            수업 시작하기 전에 말씀드렸던 것처럼<br/>
+            되는 이유는 하나인데<br/>
+            안되는 이유는 수십 가지가 넘습니다.<br/>
+            안되는 것 때문에<br/>
+            너무 실망하지 마시고,<br/>
+            되었다고 믿으시면 됩니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>아쉽게도 우리 수업은<br/>
+            도메인 이름을 사용해서 접속하는 방법,<br/>
+            같은 네트워크에 있지 않은 사람들도<br/>
+            웹서버에 접속하게 하는 방법 같은 부분은<br/>
+            다루지 못했습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>우리 수업은<br/>
+            인터넷의 본질을 다루고 있습니다만,<br/>
+            현실의 인터넷은<br/>
+            본질만으로는 동작하지 않습니다.<br/>
+            더 복잡한 내용이 많이 필요합니다.<br/>
+            여러 가지 복잡성 들은<br/>
+            후속 수업을 통해서 짚어드리겠습니다.<br/>
+            WEB1에서는 이 정도면 충분합니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>이렇게 해서<br/>
+            정보기술의 중추라고 할 수 있는<br/>
+            인터넷을 살펴봤습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>여러분은<br/>
+            서버와 클라이언트를<br/>
+            구분할 수 있게 되었습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p><br/>
+            내 컴퓨터의 ip 주소를<br/>
+            알아내는 방법도 알게 되었습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>여러분은<br/>
+            인터넷을 지배하는<br/>
+            가장 중요한 토대를 닦았습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>시간과 경험이 쌓임에 따라서<br/>
+            인터넷에 대한 여러분의 지식은<br/>
+            자연스럽게 성장하기 시작할 것입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>축하합니다.</p>
+
+
+    </div>
+</div>
+</body>
+</html>

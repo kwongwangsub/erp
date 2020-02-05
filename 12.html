@@ -1,0 +1,404 @@
+<!doctype html>
+<html>
+<head>
+    <title>WEB</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="colors.js"></script>
+    <link rel="stylesheet" href="highlight/styles/railscasts.css">
+    <script src="highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+<h1><a href="index.html">WEB1</a></h1>
+<div id="grid">
+    <ol>
+        <li><a href="1.html">수업소개</a></li>
+        <li><a href="2.html">프로젝트의 동기</a></li>
+        <li><a href="3.html">기획</a></li>
+        <li><a href="4.html">코딩과 HTML</a></li>
+        <li><a href="5.html">HTML 코딩 실습 환경 준비</a></li>
+        <li><a href="6.html">기본문법 - 태그</a></li>
+        <li><a href="7.html">혁명적인 변화</a></li>
+        <li><a href="8.html">통계에 기반한 학습</a></li>
+        <li><a href="9.html">줄바꿈</a></li>
+        <li><a href="10.html">HTML이 중요한 이유</a></li>
+        <li><a href="11.html">최후의 문법 속성과 img</a></li>
+        <li><a href="12.html">부모자식과 목록</a></li>
+        <li><a href="13.html">문서의 구조와 슈퍼스타들</a></li>
+        <li><a href="14.html">태그의 제왕</a></li>
+        <li><a href="15.html">웹사이트 완성</a></li>
+        <li><a href="16.html">원시웹</a></li>
+        <li><a href="17.html">인터넷을 여는 열쇠 - 서버와 클라이언트</a></li>
+        <li><a href="18.html">웹호스팅 - github pages</a></li>
+        <li><a href="19.html">웹서버 운영하기</a></li>
+        <li><a href="19_1.html">웹서버 설치(윈도우)</a></li>
+        <li><a href="19_2.html">웹서버 설치(맥)</a></li>
+        <li><a href="19_3.html">웹서버 설치(리눅스)</a></li>
+        <li><a href="20.html">수업을 마치며 1</a></li>
+        <li><a href="21.html">수업을 마치며 2</a></li>
+        <li><a href="22.html">수업을 마치며 3</a></li>
+        <li><a href="code_power.html">부록 : 코드의 힘</a></li>
+        <li><a href="code_power_1.html">부록 : 코드의 힘 - 동영상 삽입</a></li>
+        <li><a href="code_power_2.html">부록 : 코드의 힘 - 댓글 기능 추가</a></li>
+        <li><a href="code_power_3.html">부록 : 코드의 힘 - 채팅 기능 추가</a></li>
+        <li><a href="code_power_4.html">부록 : 코드의 힘 - 방문자 분석기</a></li>
+    </ol>
+    <div id="article">
+        <input id="night_day" type="button" value="night" onclick="
+        nightDayHandler(this);
+      ">
+        <h2>부모 자식과 목록</h2>
+        <div class="movie">
+            <video width="100%" controls>
+                <source src="./videos/12.부모자식과목록.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p style="text-align: center;">---</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>이번 시간에는<br/>
+            태그 간의 관계를 나타내는 표현인<br/>
+            부모(parent),자식(child)에 대해서<br/>
+            알아보겠습니다.</p>
+
+        <p><img alt="" height="360"
+                src="./web_img/7679.jpeg"
+                width="640"/></p>
+
+        <p>아래 코드를 보시죠.<br/>
+            (저런 이름의 태그는 없습니다)</p>
+
+        <pre class="brush: html">
+&lt;parent&gt;
+    &lt;child&gt;&lt;/child&gt;
+&lt;/parent&gt;</pre>
+
+        <p>&nbsp;</p>
+
+        <p>parent 태그에 대해서<br/>
+            child 태그를<br/>
+            자식 태그라고 합니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>또<br/>
+            child 태그에 대해서<br/>
+            parent 태그를<br/>
+            부모 태그라고 합니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p><br/>
+            아래 태그를 보시면<br/>
+            p 태그가 a 태그의 부모<br/>
+            a 태그가 p 태그의 자식입니다.</p>
+
+        <pre class="brush: html">
+&lt;p&gt;
+    &lt;a href=&quot;https://opentutorials.org&quot;&gt;opentutorials&lt;/a&gt;
+&lt;/p&gt;</pre>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>그런데 a 태그는<br/>
+            꼭 p 태그의 자식이어야 하는 것은 아닙니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>마찬가지로<br/>
+            p 태그가 꼭 a 태그의 부모일 필요는 없습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>직장의 상하관계처럼<br/>
+            필요에 따라서 관계가 달라질 수 있습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>그런데 몇몇 태그들은<br/>
+            부모 자식 관계처럼<br/>
+            고정된 관계인 태그들이 있습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>이번 시간에는<br/>
+            그런 태그들을 살펴볼 것입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>우리 기획서를 한 번 보시죠.</p>
+
+        <p style="text-align:center"><img alt="" height="412"
+                                          src="./web_img/7677.png"
+                                          width="612"/></p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>기획서 상에서<br/>
+            아직 진행하지 않은 부분이<br/>
+            붉은색으로 표시한 목차 부분입니다.<br/>
+            이 부분을 완성할 거에요.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>예제에 목차를 추가해 볼게요.<br/>
+        <pre><code class="html">1. HTML&#x3C;br&#x3E;
+2. CSS&#x3C;br&#x3E;
+3. JavaScript&#x3C;br&#x3E;
+
+&#x3C;h1&#x3E;HTML&#x3C;/h1&#x3E;
+&#x3C;p&#x3E;Hypertext Markup Language (HTML) is the standard markup language for &#x3C;strong&#x3E;creating &#x3C;u&#x3E;web&#x3C;/u&#x3E; pages&#x3C;/strong&#x3E; and web applications.Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
+&#x3C;img src=&#x22;coding.jpg&#x22; width=&#x22;100%&#x22;&#x3E;
+&#x3C;/p&#x3E;&#x3C;p style=&#x22;margin-top:45px;&#x22;&#x3E;HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets.
+&#x3C;/p&#x3E;</code></pre>
+
+        </p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>목차 비슷하게 나오죠?</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>그런데 HTML을 고안한 사람들은<br/>
+            목차를 표현할 때 쓰라고 태그를 마련해 두었습니다.<br/>
+            그럼 우리는 그걸 써야 합니다.<br/>
+            그래야 웹페이지가 더 가치있게 됩니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>목차가 영어로 무엇인가요?<br/>
+            list이죠?<br/>
+            앞에 두 글자는요?<br/>
+            li입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>아래와 같이 코드를 작성해 보세요.</p>
+
+        <pre><code class="html">&#x3C;li&#x3E;1. HTML&#x3C;/li&#x3E;
+&#x3C;li&#x3E;2. CSS&#x3C;/li&#x3E;
+&#x3C;li&#x3E;3. JavaScript&#x3C;/li&#x3E;
+
+&#x3C;h1&#x3E;HTML&#x3C;/h1&#x3E;
+&#x3C;p&#x3E;Hypertext Markup Language (HTML) is the standard markup language for &#x3C;strong&#x3E;creating &#x3C;u&#x3E;web&#x3C;/u&#x3E; pages&#x3C;/strong&#x3E; and web applications.Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
+&#x3C;/p&#x3E;&#x3C;p style=&#x22;margin-top:45px;&#x22;&#x3E;HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets.
+&#x3C;/p&#x3E;</code></pre>
+
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>이번에는<br/>
+            우리 수업의 참가자 이름을 적어 볼게요.</p>
+
+        <pre><code class="html">&#x3C;li&#x3E;1. HTML&#x3C;/li&#x3E;
+&#x3C;li&#x3E;2. CSS&#x3C;/li&#x3E;
+&#x3C;li&#x3E;3. JavaScript&#x3C;/li&#x3E;
+
+&#x3C;li&#x3E;egoing&#x3C;/li&#x3E;
+&#x3C;li&#x3E;k8805&#x3C;/li&#x3E;
+&#x3C;li&#x3E;sorialgi&#x3C;/li&#x3E;
+
+&#x3C;h1&#x3E;HTML&#x3C;/h1&#x3E;
+&#x3C;p&#x3E;Hypertext Markup Language (HTML) is the standard markup language for &#x3C;strong&#x3E;creating &#x3C;u&#x3E;web&#x3C;/u&#x3E; pages&#x3C;/strong&#x3E; and web applications.Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
+&#x3C;/p&#x3E;&#x3C;p style=&#x22;margin-top:45px;&#x22;&#x3E;HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets.
+&#x3C;/p&#x3E;</code></pre>
+
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>목차와 참가자의 목록이<br/>
+            구분이 가나요?<br/>
+            &nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>이렇게 목록은<br/>
+            다른 목록과 구분할 수 있도록<br/>
+            경계가 필요합니다.<br/>
+            이 때 사용하는 태그가<br/>
+            &lt;ul&gt; 태그입니다.</p>
+
+        <pre><code class="html">&#x3C;ul&#x3E;
+  &#x3C;li&#x3E;1. HTML&#x3C;/li&#x3E;
+  &#x3C;li&#x3E;2. CSS&#x3C;/li&#x3E;
+  &#x3C;li&#x3E;3. JavaScript&#x3C;/li&#x3E;
+&#x3C;/ul&#x3E;
+&#x3C;ul&#x3E;
+  &#x3C;li&#x3E;egoing&#x3C;/li&#x3E;
+  &#x3C;li&#x3E;k8805&#x3C;/li&#x3E;
+  &#x3C;li&#x3E;sorialgi&#x3C;/li&#x3E;
+&#x3C;/ul&#x3E;
+&#x3C;h1&#x3E;HTML&#x3C;/h1&#x3E;
+&#x3C;p&#x3E;Hypertext Markup Language (HTML) is the standard markup language for &#x3C;strong&#x3E;creating &#x3C;u&#x3E;web&#x3C;/u&#x3E; pages&#x3C;/strong&#x3E; and web applications.Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
+&#x3C;/p&#x3E;&#x3C;p style=&#x22;margin-top:45px;&#x22;&#x3E;HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets.
+&#x3C;/p&#x3E;</code></pre>
+
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>보시는 것처럼<br/>
+            li 태그는 ul 태그를 꼭 필요로 합니다.<br/>
+            ul 태그 역시 li 태그가 없다면 존재 가치가 없습니다.<br/>
+            이 둘은 서로 아주 밀접한 관계입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>그런데 위의 코드에서<br/>
+            수업 목록을 자세히 보시죠.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>코딩 공부를 할 때는 항상<br/>
+            극단적으로 생각해야 합니다.<br/>
+            극단적이지 않은 경우에는<br/>
+            코딩을 할 필요가 없기 때문입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>만약 수업의 목록이<br/>
+            3개가 아니라<br/>
+            1억개라고 생각해 보세요.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>1억개의 항목을 간신히 완성했습니다.<br/>
+            그런데 누군가가<br/>
+            저 중에 첫번째 항목을 지워달라고 하면<br/>
+            여러분 어떻게 해야 하나요?</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>나머지 항목의 번호를 모두 수정해야 할 것입니다.<br/>
+            이런 상황에 있는 사람은 얼마나 절망스러울까요?</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>바로 이런 절망감 속에서<br/>
+            우리를 구원해 주는 것이 코딩입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>예제를 아래와 같이 변경해 봅시다.<br/>
+            (참가자 목록은 이제 필요없기 때문에 지워주세요)</p>
+
+        <pre><code class="html">&#x3C;ol&#x3E;
+  &#x3C;li&#x3E;HTML&#x3C;/li&#x3E;
+  &#x3C;li&#x3E;CSS&#x3C;/li&#x3E;
+  &#x3C;li&#x3E;JavaScript&#x3C;/li&#x3E;
+&#x3C;/ol&#x3E;
+&#x3C;h1&#x3E;HTML&#x3C;/h1&#x3E;
+&#x3C;p&#x3E;Hypertext Markup Language (HTML) is the standard markup language for &#x3C;strong&#x3E;creating &#x3C;u&#x3E;web&#x3C;/u&#x3E; pages&#x3C;/strong&#x3E; and web applications.Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
+&#x3C;/p&#x3E;&#x3C;p style=&#x22;margin-top:45px;&#x22;&#x3E;HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets.
+&#x3C;/p&#x3E;</code></pre>
+
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>ul 태그가 ol 태그로 변경되었습니다.<br/>
+            ul은 <u><strong>u</strong></u>nordered <u><strong>l</strong></u>ist의 약자이고,<br/>
+            ol은 <u><strong>o</strong></u>rdered <u><strong>l</strong></u>ist의 약자랍니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>이렇게 해서<br/>
+            우리의 프로젝트에 목차를 추가했습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>또 빈도수가 매우 높은 태그들 3개를 살펴봤습니다.</p>
+
+        <p><img alt="" height="613"
+                src="./web_img/7678.png" width="640"/>
+        </p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p><a href="https://github.com/web-n/web1_html_internet/commit/0525cfdc2b9d84477f14e3db7ec25ba3c2dbc5b8"
+              target="_blank">변경사항</a></p>
+
+        <pre><code class="html">&#x3C;ol&#x3E;
+  &#x3C;li&#x3E;HTML&#x3C;/li&#x3E;
+  &#x3C;li&#x3E;CSS&#x3C;/li&#x3E;
+  &#x3C;li&#x3E;JavaScript&#x3C;/li&#x3E;
+&#x3C;/ol&#x3E;
+&#x3C;h1&#x3E;HTML&#x3C;/h1&#x3E;
+&#x3C;p&#x3E;Hypertext Markup Language (HTML) is the standard markup language for &#x3C;strong&#x3E;creating &#x3C;u&#x3E;web&#x3C;/u&#x3E; pages&#x3C;/strong&#x3E; and web applications.Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
+&#x3C;img src=&#x22;coding.jpg&#x22; width=&#x22;100%&#x22;&#x3E;
+&#x3C;/p&#x3E;&#x3C;p style=&#x22;margin-top:45px;&#x22;&#x3E;HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets.
+&#x3C;/p&#x3E;</code></pre>
+
+        <p>&nbsp;</p>
+
+    </div>
+</div>
+</body>
+</html>

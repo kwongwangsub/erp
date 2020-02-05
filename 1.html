@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+<head>
+    <title>WEB</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="colors.js"></script>
+    <link rel="stylesheet" href="highlight/styles/railscasts.css">
+    <script src="highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+<h1><a href="index.html">WEB1</a></h1>
+<div id="grid">
+    <ol>
+        <li><a href="1.html">수업소개</a></li>
+        <li><a href="2.html">프로젝트의 동기</a></li>
+        <li><a href="3.html">기획</a></li>
+        <li><a href="4.html">코딩과 HTML</a></li>
+        <li><a href="5.html">HTML 코딩 실습 환경 준비</a></li>
+        <li><a href="6.html">기본문법 - 태그</a></li>
+        <li><a href="7.html">혁명적인 변화</a></li>
+        <li><a href="8.html">통계에 기반한 학습</a></li>
+        <li><a href="9.html">줄바꿈</a></li>
+        <li><a href="10.html">HTML이 중요한 이유</a></li>
+        <li><a href="11.html">최후의 문법 속성과 img</a></li>
+        <li><a href="12.html">부모자식과 목록</a></li>
+        <li><a href="13.html">문서의 구조와 슈퍼스타들</a></li>
+        <li><a href="14.html">태그의 제왕</a></li>
+        <li><a href="15.html">웹사이트 완성</a></li>
+        <li><a href="16.html">원시웹</a></li>
+        <li><a href="17.html">인터넷을 여는 열쇠 - 서버와 클라이언트</a></li>
+        <li><a href="18.html">웹호스팅 - github pages</a></li>
+        <li><a href="19.html">웹서버 운영하기</a></li>
+        <li><a href="19_1.html">웹서버 설치(윈도우)</a></li>
+        <li><a href="19_2.html">웹서버 설치(맥)</a></li>
+        <li><a href="19_3.html">웹서버 설치(리눅스)</a></li>
+        <li><a href="20.html">수업을 마치며 1</a></li>
+        <li><a href="21.html">수업을 마치며 2</a></li>
+        <li><a href="22.html">수업을 마치며 3</a></li>
+        <li><a href="code_power.html">부록 : 코드의 힘</a></li>
+        <li><a href="code_power_1.html">부록 : 코드의 힘 - 동영상 삽입</a></li>
+        <li><a href="code_power_2.html">부록 : 코드의 힘 - 댓글 기능 추가</a></li>
+        <li><a href="code_power_3.html">부록 : 코드의 힘 - 채팅 기능 추가</a></li>
+        <li><a href="code_power_4.html">부록 : 코드의 힘 - 방문자 분석기</a></li>
+    </ol>
+    <div id="article">
+        <input id="night_day" type="button" value="night" onclick="
+        nightDayHandler(this);
+      ">
+        <h2>오리엔테이션</h2>
+        <div class="movie">
+            <video width="100%" controls>
+                <source src="./videos/1.수업소개.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p style="text-align: center;">---</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>우리는 지금부터<br />
+            코딩<br />
+            웹<br />
+            인터넷<br />
+            컴퓨터라는<br />
+            거대한 주제에 대한 탐험을 시작할 거예요.</p>
+
+        <p>&nbsp;</p>
+
+        <p><a href="https://www.instagram.com/kanari_jones/"><img alt="까나리존스" height="360" src="./web_img/7512.png" style="font-size: 13.2px;" width="640" /></a></p>
+
+        <p>&nbsp;</p>
+
+        <p>이 여행을 시작하기에 앞서서<br />
+            한가지 준비가 필요한데요.<br />
+            바로 우리들의 상상력입니다.</p>
+
+        <p>지금부터 여러분은 자신을<br />
+            남의 문제를 통해서<br />
+            코딩을 배우려는 학생이 아니라</p>
+
+        <p>나의 문제를<br />
+            코딩으로 해결하려는<br />
+            엔지니어라고 상상해주세요.</p>
+
+        <p><a href="https://www.instagram.com/sayhelloanbu/" target="_blank"><img alt="Anbu" height="360" src="./web_img/7514.png" style="font-size: 13.2px;" width="640" /></a></p>
+
+        <p>그럼 어떤 문제를 해결하면 좋을까요?</p>
+
+        <p><img alt="" height="360" src="./web_img/7515.png" width="640" /><br />
+            글쎄요.<br />
+            각자가 해결하고 싶은 문제가 다를 거예요.<br />
+            또 해결하고 싶은 문제가 아직 없을지도 모르고요.<br />
+            그래서 저는 제가 해결하고 싶었던 문제를<br />
+            여러분에게 빌려드리겠습니다.</p>
+
+        <p>여러분은 7년 전의 제가 되어서<br />
+            제가 해결하고 싶었던 문제를<br />
+            함께 해결해봅시다.</p>
+
+        <p><img alt="" height="360" src="./web_img/7516.png" style="font-size: 13.2px;" width="640" /></p>
+
+        <p>여기서 중요한 것은<br />
+            이해력보다<br />
+            공감력입니다.</p>
+
+        <p>7년 전에 제가 직면 했던 문제가<br />
+            저에게 얼마나 중요한 문제였을지를<br />
+            최대한 과장해서 느껴주셔야 합니다.</p>
+
+        <p><img alt="" height="360" src="./web_img/7517.png" width="640" /></p>
+
+        <p>어떤 문제가<br />
+            우리 삶에서 중요하고 심각할수록<br />
+            그 문제를 해결해주는 공부는<br />
+            문제로부터 우리를 해방시켜줄 것입니다.</p>
+
+        <p><img alt="" height="360" src="./web_img/7518.png" width="640" /></p>
+
+        <p>반대로<br />
+            그 문제가<br />
+            우리 삶과 동떨어져 있고,<br />
+            사소하다면 어떻게 될까요?&nbsp;</p>
+
+        <p><img alt="" height="360" src="./web_img/7519.png" width="640" /></p>
+
+        <p>공부자체가 삶의 문제가 되어서&nbsp;<br />
+            우리를 해방시키기는 커녕<br />
+            억압할 것입니다.&nbsp;</p>
+
+        <p><a href="https://www.facebook.com/aayeongyoon" target="_blank"><img alt="" height="360" src="./web_img/7520.png" width="640" /></a></p>
+
+        <p>저는 자신의 뇌를 이기는 장사는 없다고 생각해요.<br />
+            공부의 효용을<br />
+            뇌에게 자주 증명해 보인다면<br />
+            우리의 뇌는 공부를 좋아하는 뇌가 될 것입니다.</p>
+
+        <p><img alt="" height="360" src="./web_img/7521.png" width="640" /></p>
+
+        <p>공부를 좋아하게 된다면<br />
+            노력하지 않아도 우리는 공부 거리를 찾게 될 것입니다.<br />
+            자연스럽게 시간이 흐를수록 실력도 좋아질 것이고요.</p>
+
+        <p><img alt="" height="360" src="./web_img/7523.png" width="640" /></p>
+
+        <p>저는 이 수업이 지식을 알려주는 수업이 되는 것도 좋겠지만<br />
+            공부와 친해지는 계기가 되었으면 좋겠습니다.</p>
+
+        <p><a href="https://opentutorials.org/course/2722" target="_blank"><img alt="" height="360" src="./web_img/7522.png" width="640" /></a></p>
+
+        <p style="text-align: center;">그럼 출발하겠습니다.</p>
+
+    </div>
+</div>
+</body>
+</html>

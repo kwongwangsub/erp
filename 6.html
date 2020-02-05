@@ -1,0 +1,255 @@
+<!doctype html>
+<html>
+<head>
+    <title>WEB</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="colors.js"></script>
+    <link rel="stylesheet" href="highlight/styles/railscasts.css">
+    <script src="highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <link rel="stylesheet" href="highlight/styles/railscasts.css">
+    <script src="highlight/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+<h1><a href="index.html">WEB1</a></h1>
+<div id="grid">
+    <ol>
+        <li><a href="1.html">수업소개</a></li>
+        <li><a href="2.html">프로젝트의 동기</a></li>
+        <li><a href="3.html">기획</a></li>
+        <li><a href="4.html">코딩과 HTML</a></li>
+        <li><a href="5.html">HTML 코딩 실습 환경 준비</a></li>
+        <li><a href="6.html">기본문법 - 태그</a></li>
+        <li><a href="7.html">혁명적인 변화</a></li>
+        <li><a href="8.html">통계에 기반한 학습</a></li>
+        <li><a href="9.html">줄바꿈</a></li>
+        <li><a href="10.html">HTML이 중요한 이유</a></li>
+        <li><a href="11.html">최후의 문법 속성과 img</a></li>
+        <li><a href="12.html">부모자식과 목록</a></li>
+        <li><a href="13.html">문서의 구조와 슈퍼스타들</a></li>
+        <li><a href="14.html">태그의 제왕</a></li>
+        <li><a href="15.html">웹사이트 완성</a></li>
+        <li><a href="16.html">원시웹</a></li>
+        <li><a href="17.html">인터넷을 여는 열쇠 - 서버와 클라이언트</a></li>
+        <li><a href="18.html">웹호스팅 - github pages</a></li>
+        <li><a href="19.html">웹서버 운영하기</a></li>
+        <li><a href="19_1.html">웹서버 설치(윈도우)</a></li>
+        <li><a href="19_2.html">웹서버 설치(맥)</a></li>
+        <li><a href="19_3.html">웹서버 설치(리눅스)</a></li>
+        <li><a href="20.html">수업을 마치며 1</a></li>
+        <li><a href="21.html">수업을 마치며 2</a></li>
+        <li><a href="22.html">수업을 마치며 3</a></li>
+        <li><a href="code_power.html">부록 : 코드의 힘</a></li>
+        <li><a href="code_power_1.html">부록 : 코드의 힘 - 동영상 삽입</a></li>
+        <li><a href="code_power_2.html">부록 : 코드의 힘 - 댓글 기능 추가</a></li>
+        <li><a href="code_power_3.html">부록 : 코드의 힘 - 채팅 기능 추가</a></li>
+        <li><a href="code_power_4.html">부록 : 코드의 힘 - 방문자 분석기</a></li>
+    </ol>
+    <div id="article">
+        <input id="night_day" type="button" value="night" onclick="
+        nightDayHandler(this);
+      ">
+        <h2>기본 문법 - 태그</h2>
+        <div class="movie">
+            <video width="100%" controls>
+                <source src="./videos/6.기본문법-태그.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p style="text-align: center;">---</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>이제부터 진짜로 코딩을 해보겠습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>먼저 우리가 만들었던 기획서를 다시 보시죠.</p>
+
+        <p><img alt="" height="360"
+                src="./web_img/7594.jpeg"
+                width="640"/></p>
+
+        <p>이런 모양의 웹페이지를 한 번에 만들수는 없습니다. 조각조각 구현하면서 전체적으로 완성해 나가면 됩니다. 이번 시간에는 붉은색으로 표시된 부분을 작업 해보겠습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>본격적으로 수업을 시작하기에 앞서서<br/>
+            여러분에게 부탁드리고 싶은 것이 있습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p><br/>
+            이 웹페이지를 남의 문제가 아닌<br/>
+            나의 문제라고 상상해주세요.<br/>
+            저와 똑같이 하셔도 됩니다만,<br/>
+            그것보다는 자신의 삶에서 중요한 정보들이 있을 거예요.<br/>
+            그런 정보들을 채워가면서 수업을 따라오신다면<br/>
+            우리 수업이 보다 의미 있지 않을까요?</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>1.html에 아래와 같은 내용을 저장한 후에 웹브라우저를 리로드 했습니다.</p>
+
+        <pre><code class="html">Hypertext Markup Language (HTML) is the standard markup language for creating web pages and web applications.</code></pre>
+
+        <p><img alt="" src="./web_img/7595.jpeg"/></p>
+
+        <p>의미 있는 정보를 웹브라우저에 표시했습니다. 이것만으로도 처음에는 행복할 것입니다. 하지만 이 화면을 계속 쳐다보고 있으면 여러가지 불만족이 생겨날꺼예요. 여기서 creating web
+            pages라는 부분이 중요한 내용이라는 생각이 들었다면 어떻게 하고 싶겠어요?</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>강조표시하고 싶겠죠? 우리는 글씨를 진하게 표시하고 싶어졌습니다. &lt;strong&gt;과 &lt;/strong&gt;으로 진하게 표시하고 싶은 구간을 감싸주면 됩니다.</p>
+
+        <pre><code class="html">Hypertext Markup Language (HTML) is the standard markup language for &#x3C;strong&#x3E;creating web pages&#x3C;/strong&#x3E; and web applications.
+</code></pre>
+
+        <p>강조표시가 되었죠?! 신기하지 않나요? 우리가 지금 한 것은 사소한 것이 아닙니다. 웹이 아무리 복잡해도 본질적으로는 이것을 벗어나지 않습니다.</p>
+
+        <p>다시 화면을 쳐다보세요. 여러분은 또 불만족이 생깁니다. creating web pages에서 web이라고 되어 있는 부분이<br/>
+            더 중요하다는 생각이 들었습니다. 그럼 어떻게 하고 싶겠어요? 분명 밑줄을 치고 싶을 거예요. (그렇다고 해주세요)</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>밑줄이 영어로 먼가요? underline이죠? 그중에 첫 글자는 무엇인가요? u입니다. &lt;u&gt;와 &lt;/u&gt;로 감싸면 됩니다.</p>
+
+        <p>
+            <a href="https://github.com/web-n/web1_html_internet/commit/0b69d0cd9acebd59968ace886efed76e0aaa92e9">변경사항</a>
+        </p>
+
+        <pre><code class="html">Hypertext Markup Language (HTML) is the standard markup language for &#x3C;strong&#x3E;creating &#x3C;u&#x3E;web&#x3C;/u&#x3E; pages&#x3C;/strong&#x3E; and web applications.
+</code></pre>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>밑줄을 긋는 것이 별거 아닌 것 같지만,<br/>
+            실제로 컴퓨터 화면에 밑줄을 긋기 위해서는<br/>
+            큰 노력이 필요합니다.<br/>
+            누군가(웹브라우저 개발자)는 저 밑줄을 긋기 위해서<br/>
+            며칠 밤을 새웠을지도 모릅니다.<br/>
+            하지만 그렇게 고생을 하면<br/>
+            전세계인이 웹페이지에 밑줄을 그을 수 있습니다.<br/>
+            밤을 새울만하죠?</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>이렇게 해서<br/>
+            웹페이지를 만드는 가장 중요한 규칙을<br/>
+            경험적으로 살펴봤습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>이제부터는 지금까지 경험한 것을 이론적으로 정리해봅시다.</p>
+
+        <p><img alt="" height="360"
+                src="./web_img/7596.jpeg"
+                width="640"/></p>
+
+        <p>위의 그림에서 strong이라는 것을 HTML에서는 문법적으로 태그라고 부릅니다. 앞에 있는 태그를 열리는 태그<br/>
+            뒤에 있는 태그를 닫히는 태그라고 구분해서 부르기도 합니다. 닫히는 태그는 태그명 앞에 /를 붙입니다.</p>
+
+        <p>&lt;strong&gt;creating &lt;u&gt;web&lt;/u&gt; pages&lt;/strong&gt;을 보시면 아시겠지만, 태그는 중첩해서 사용할수도 있습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>한번 생각해봅시다.<br/>
+            태그라는 말 들어보셨죠?<br/>
+            어디서 들어봤나요?</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>옷을 살 때 붙어 있는 것이 태그죠.<br/>
+            태그가 하는 역할이 무엇인가요?<br/>
+            그 옷을 설명합니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>다시 HTML을 태그를 바라봅시다.<br/>
+            HTML과 같은 언어를 만든 사람들은<br/>
+            이 언어를 만들 때 자신들이 만든 문법을<br/>
+            사람들이 쉽게 이해하기를 원했습니다.<br/>
+            그래서 일상에서 자주 쓰는 말 중에<br/>
+            이 문법과 비슷한 말을 찾았겠죠.<br/>
+            그래서 찾은<br/>
+            비유,<br/>
+            은유가<br/>
+            바로 태그입니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>정보기술은 역사가 길지 않습니다.<br/>
+            좋게 말하면 최신이고,&nbsp;<br/>
+            안 좋게 말하면 근본이 약합니다.&nbsp;<br/>
+            부족한 근본을 어디서 빌려왔을까요?<br/>
+            많은 것이 일상에 대한&nbsp;비유와 은유입니다.<br/>
+            그런 점에서 컴퓨터는 하나의 거대한 <a href="https://opentutorials.org/course/1189/17677" target="_blank">시</a>입니다.<br/>
+            컴퓨터가 차갑게 느껴질 수 있지만,<br/>
+            컴퓨터 공학은 사실<br/>
+            낭만적인 것으로 가득 차 있습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p>여러분은 이제<br/>
+            HTML을 지배하는 가장 중요한 문법을<br/>
+            사용할 수 있게 되었습니다.<br/>
+            여러분에게 얼마나 중요한 사건이 일어난 것인지<br/>
+            다음 시간에 알아보겠습니다.</p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <p><a href="https://www.instagram.com/sundayspinach/" target="_blank"><img alt="" height="360"
+                                                                                   src="./web_img/7597.jpeg"
+                                                                                   width="640"/></a></p>
+
+        <p>&nbsp;</p>
+
+        <p>&nbsp;</p>
+
+        <h2>자주 묻는 질문</h2>
+
+        <ul>
+            <li>한글이 깨지면 어떻게 해야 하나요?<br/>
+                &lt;meta charset=&quot;utf-8&quot;&gt;를 추가해보세요. 여러분이 파일을&nbsp;저장하면&nbsp;UTF-8로 저장이 됩니다. 그럼 웹브라우저에게
+                UTF-8로 페이지를 열라고 해줘야 합니다. 그걸 브라우저에게 알려주는 코드가&nbsp;&lt;meta charset=&quot;utf-8&quot;&gt; 입니다.&nbsp;
+            </li>
+        </ul>
+
+    </div>
+</div>
+
+</body>
+</html>
